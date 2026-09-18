@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavors | The Fizzy</title>
+    <title>Products by Flavor Line | Craft Soda & Small-Batch Beverage Company</title>
+    <meta name="description"
+        content="Explore our craft soda products by flavor line: Vintage Classics, Real Fruit Sparklers, Botanical Brews, and Limited Small-Batch Reserves.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +33,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <span>The Fizzy</span>
+                <img src="assets/images/logo.png" alt="Craft Soda Logo" class="brand-logo">
+                <span>Craft Soda</span>
             </a>
 
             <div class="d-flex align-items-center ms-auto">
@@ -51,23 +54,21 @@
                             <li><a class="dropdown-item text-white" href="home-2.html">Home 2</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link active" href="flavors.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Where to Buy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Wholesale</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="flavors.html">Flavors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
 
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
 
                 <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3">
-                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
                     <div class="theme-controls d-flex">
                         <button id="theme-toggle" class="control-btn" title="Toggle Dark/Light Mode"><i
                                 class="bi bi-sun"></i></button>
                         <button id="rtl-toggle" class="control-btn" title="Toggle LTR/RTL"><span
                                 class="rtl-text">LTR</span></button>
-
                     </div>
                 </div>
             </div>
@@ -78,96 +79,93 @@
     <section class="flavors-hero">
         <div class="flavors-hero-grid container">
             <div class="flavors-hero-copy">
-                <span class="hero-kicker">Signature Rituals</span>
-                <h1>Living flavors tuned for <span class="text-accent">mindful sipping</span></h1>
+                <span class="hero-kicker">Handcrafted Small-Batch Sodas</span>
+                <h1>Authentic soda lines brewed for <span class="text-accent">pure refreshment</span></h1>
                 <p class="hero-lead">
-                    Every batch begins with heirloom tea leaves aged in volcanic soil, married to rare botanicals and
-                    fermented with a century-old culture so the flavor keeps evolving with every pour.
+                    Every batch begins with caramelized pure cane sugar, married to crushed whole fruits, aromatic roots, and rare botanicals kettle-simmered for timeless flavor.
                 </p>
                 <div class="hero-actions">
-                    <a href="#seasonal-release" class="btn btn-accent btn-lg">Discover Releases</a>
-                    <a href="pricing.html" class="btn btn-outline-light btn-lg">Reserve a Batch</a>
+                    <a href="#flavor-lines" class="btn btn-accent btn-lg">Explore Flavor Lines</a>
+                    <a href="pricing.html" class="btn btn-outline-light btn-lg">Reserve Wholesale Cases</a>
                 </div>
             </div>
             <div class="flavors-hero-image">
                 <div class="hero-orb orb-one"></div>
                 <div class="hero-orb orb-two"></div>
-                <img class="hero-bottle" src="assets/images/wellness_brew.png" alt="Living Brew">
+                <img class="hero-bottle" src="assets/images/wellness_brew.png" alt="Craft Soda Bottle">
             </div>
         </div>
     </section>
 
-    <!-- Signature Collection Grid -->
-    <section class="section-padding bg-darker">
+    <!-- Products Grid by Flavor Line -->
+    <section class="section-padding bg-darker" id="flavor-lines">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll">
-                <span class="text-accent fw-bold text-uppercase letter-spacing-2">The Classics</span>
-                <h2 class="display-3 fw-bold mt-3">Signature <span class="text-accent">Collection</span></h2>
-                <p class="lead opacity-75 max-width-700 mx-auto">Explore our year-round favorites, meticulously
-                    fermented for ultimate balance and vitality.</p>
+                <span class="text-accent fw-bold text-uppercase letter-spacing-2">The Flavor Lines</span>
+                <h2 class="display-3 fw-bold mt-3">Products by <span class="text-accent">Flavor Line</span></h2>
+                <p class="lead opacity-75 max-width-700 mx-auto">Explore our four dedicated small-batch lines—from vintage soda fountain classics to real fruit sparklers and botanical brews.</p>
             </div>
 
             <div class="row g-4 mt-5">
-                <!-- Flavor 1 -->
+                <!-- Flavor Line 1: Vintage Classics Line -->
                 <div class="col-lg-4 animate-on-scroll">
                     <div class="glass-card hover-lift p-4 h-100" id="ginger-ritual">
                         <div class="flavor-img-wrap mb-4 bg-secondary rounded-4 p-3">
-                            <img src="assets/images/hero_bottle.png" alt="Pure Ginger" class="img-fluid">
+                            <img src="assets/images/slider-1.png" alt="Vintage Craft Cola" class="img-fluid">
                         </div>
-                        <h4 class="text-accent">Ginger Ritual</h4>
+                        <span class="badge bg-dark border border-secondary text-white-50 mb-2">VINTAGE CLASSICS LINE</span>
+                        <h4 class="text-accent">Vintage Craft Cola</h4>
                         <div class="d-flex gap-2 mb-3">
-                            <span class="badge bg-dark border border-secondary text-white-50">SHARP</span>
-                            <span class="badge bg-dark border border-secondary text-white-50">CITRUS</span>
+                            <span class="badge bg-dark border border-secondary text-white-50">KOLA NUT</span>
+                            <span class="badge bg-dark border border-secondary text-white-50">WARM SPICE</span>
                         </div>
-                        <p class="opacity-75">Cold-pressed organic ginger roots meet our heirloom culture for a sharp,
-                            morning-wakening kick.</p>
+                        <p class="opacity-75">Whole kola nut, cinnamon bark, citrus peel, and caramelized pure cane sugar. Bold, complex, and bubbly.</p>
                         <div
                             class="border-top border-secondary pt-3 mt-4 d-flex justify-content-between align-items-center">
-                            <span class="fw-bold">$5.50 / Bottle</span>
+                            <span class="fw-bold">$4.50 / Bottle</span>
                             <a href="contact.html" class="text-accent small fw-bold">Order Batch <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Flavor 2 -->
+                <!-- Flavor Line 2: Real Fruit Sparklers Line -->
                 <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.1s">
                     <div class="glass-card hover-lift p-4 h-100 border-accent" id="wild-berry-bloom">
                         <div class="flavor-img-wrap mb-4 bg-secondary rounded-4 p-3">
-                            <img src="assets/images/flavors.png" alt="Wild Berry" class="img-fluid">
+                            <img src="assets/images/slider-2.png" alt="Wild Cherry Bloom" class="img-fluid">
                         </div>
-                        <h4 class="text-accent">Wild Berry Bloom</h4>
+                        <span class="badge bg-accent text-dark mb-2 fw-bold">FRUIT SPARKLERS LINE</span>
+                        <h4 class="text-accent">Wild Cherry Bloom</h4>
                         <div class="d-flex gap-2 mb-3">
-                            <span class="badge bg-accent text-dark-50">SWEET</span>
-                            <span class="badge bg-dark border border-secondary text-white-50">FRUITY</span>
+                            <span class="badge bg-accent text-dark-50">BLACK CHERRY</span>
+                            <span class="badge bg-dark border border-secondary text-white-50">TART FIZZ</span>
                         </div>
-                        <p class="opacity-75">A symphony of alpine berries—blackberries, blueberries, and
-                            raspberries—infused with violet notes.</p>
+                        <p class="opacity-75">Tart Michigan black cherries, elderberry juice, and crisp mountain carbonation. Pure fruit with zero artificial syrups.</p>
                         <div
                             class="border-top border-secondary pt-3 mt-4 d-flex justify-content-between align-items-center">
-                            <span class="fw-bold">$6.00 / Bottle</span>
+                            <span class="fw-bold">$4.50 / Bottle</span>
                             <a href="contact.html" class="btn btn-accent btn-sm px-4 rounded-pill">Popular</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Flavor 3 -->
+                <!-- Flavor Line 3: Botanical & Herbal Brews Line -->
                 <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.2s">
                     <div class="glass-card hover-lift p-4 h-100" id="emerald-mint">
                         <div class="flavor-img-wrap mb-4 bg-secondary rounded-4 p-3">
-                            <img src="assets/images/flavor_profile.png" alt="Lemon Mint" class="img-fluid"
-                                style="filter: hue-rotate(90deg)">
+                            <img src="assets/images/slider-4.png" alt="Crisp Botanical Ginger" class="img-fluid">
                         </div>
-                        <h4 class="text-accent">Emerald Mint</h4>
+                        <span class="badge bg-dark border border-secondary text-white-50 mb-2">BOTANICAL BREWS LINE</span>
+                        <h4 class="text-accent">Crisp Botanical Ginger</h4>
                         <div class="d-flex gap-2 mb-3">
-                            <span class="badge bg-dark border border-secondary text-white-50">COOLING</span>
-                            <span class="badge bg-dark border border-secondary text-white-50">CLEAN</span>
+                            <span class="badge bg-dark border border-secondary text-white-50">GINGER ROOT</span>
+                            <span class="badge bg-dark border border-secondary text-white-50">MINT LIME</span>
                         </div>
-                        <p class="opacity-75">Garden-fresh mint leaves steeping with Meyer lemons to provide clarity and
-                            absolute refreshment.</p>
+                        <p class="opacity-75">Fresh-pressed ginger root, garden mint, and Meyer lemon steep. A fiery, refreshing soda kick that electrifies the palate.</p>
                         <div
                             class="border-top border-secondary pt-3 mt-4 d-flex justify-content-between align-items-center">
-                            <span class="fw-bold">$5.50 / Bottle</span>
+                            <span class="fw-bold">$4.50 / Bottle</span>
                             <a href="contact.html" class="text-accent small fw-bold">Order Batch <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
@@ -178,33 +176,30 @@
     </section>
 
     <!-- Seasonal Release Highlight -->
-    <section class="section-padding bg-dark">
+    <section class="section-padding bg-dark" id="seasonal-release">
         <div class="container">
             <div class="glass-card p-5 border-accent overflow-hidden position-relative">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6 animate-on-scroll text-center text-lg-start">
-                        <span class="premium-tag mb-3 d-inline-block">Special Edition</span>
-                        <h2 class="display-3 fw-bold mb-4">The Golden <br> <span class="text-accent">Aura</span></h2>
-                        <p class="lead opacity-75 mb-5 mx-auto mx-lg-0">Our limited release Turmeric and Yuzu blend.
-                            Only 500 bottles
-                            brewed this month from volcanic roots sourced in North Bali.</p>
+                        <span class="premium-tag mb-3 d-inline-block">Limited Reserve Line</span>
+                        <h2 class="display-3 fw-bold mb-4">Blood Orange <br> <span class="text-accent">Reserve</span></h2>
+                        <p class="lead opacity-75 mb-5 mx-auto mx-lg-0">Our limited winter release Moro blood orange and wild rosemary soda. Only 600 bottles kettle-brewed this month from sun-drenched grove harvests.</p>
                         <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4">
                             <div class="glass-card bg-secondary p-4 text-center border-0 flex-fill"
                                 style="border-radius: 30px; min-width: 120px;">
-                                <h3 class="text-accent mb-0">Low</h3>
-                                <p class="small opacity-50 mb-0">Availability</p>
+                                <h3 class="text-accent mb-0">600</h3>
+                                <p class="small opacity-50 mb-0">Bottles Brewed</p>
                             </div>
                             <div class="glass-card bg-secondary p-4 text-center border-0 flex-fill"
                                 style="border-radius: 30px; min-width: 120px;">
-                                <h3 class="text-accent mb-0">BALI</h3>
-                                <p class="small opacity-50 mb-0">Origin</p>
+                                <h3 class="text-accent mb-0">CALIFORNIA</h3>
+                                <p class="small opacity-50 mb-0">Citrus Origin</p>
                             </div>
                         </div>
-                        <a href="pricing.html" class="btn btn-accent btn-lg px-5 mt-5 fw-bold">Reserve for
-                            Subscription</a>
+                        <a href="pricing.html" class="btn btn-accent btn-lg px-5 mt-5 fw-bold">Reserve for Wholesale</a>
                     </div>
                     <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s">
-                        <img src="assets/images/wellness_brew.png" alt="Special Brew"
+                        <img src="assets/images/event_tasting_collection.png" alt="Special Reserve Soda"
                             class="img-fluid rounded-5 shadow-2xl border border-secondary">
                     </div>
                 </div>
@@ -215,27 +210,24 @@
     <!-- The Brewing Science Grid -->
     <section class="section-padding bg-darker">
         <div class="container text-center">
-            <h2 class="display-4 fw-bold mb-5">The Science of <span class="text-accent">Living</span></h2>
+            <h2 class="display-4 fw-bold mb-5">The Art of <span class="text-accent">Craft Soda</span></h2>
             <div class="row g-4 text-start">
                 <div class="col-md-4 animate-on-scroll">
                     <div class="p-4 bg-secondary text-white rounded-4 border-inline-start border-accent border-4 h-100">
-                        <h5>Bio-Diversity</h5>
-                        <p class="small opacity-75 mb-0">Each bottle carries over 40 billion live probiotic colonies
-                            from our decades-old heirloom SCOBY.</p>
+                        <h5>100% Pure Cane Sugar</h5>
+                        <p class="small opacity-75 mb-0">We slow-simmer unrefined cane sugar in copper kettles, providing rich caramelized sweetness with zero corn syrup.</p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.1s">
                     <div class="p-4 bg-secondary text-white rounded-4 border-inline-start border-accent border-4 h-100">
-                        <h5>Organic Synergy</h5>
-                        <p class="small opacity-75 mb-0">We use cold-pressed organic fruits, never concentrates or
-                            powders, ensuring the raw spirit remains.</p>
+                        <h5>Whole Botanicals & Roots</h5>
+                        <p class="small opacity-75 mb-0">Real kola nuts, spicy ginger root, and Madagascar vanilla beans steeped directly into our small-batch brews.</p>
                     </div>
                 </div>
                 <div class="col-md-4 animate-on-scroll" style="animation-delay: 0.2s">
                     <div class="p-4 bg-secondary text-white rounded-4 border-inline-start border-accent border-4 h-100">
-                        <h5>Time Mastery</h5>
-                        <p class="small opacity-75 mb-0">Our secondary fermentation lasts exactly 144 hours to achieve
-                            the perfect fine-bubble carbonation.</p>
+                        <h5>Velvet Micro-Fizz</h5>
+                        <p class="small opacity-75 mb-0">Chilled to near-freezing for fine, tight bubbles that sparkle gently across the palate without harsh bite.</p>
                     </div>
                 </div>
             </div>
@@ -248,10 +240,10 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
-                        <span>The Fizzy</span>
+                        <img src="assets/images/logo.png" alt="Craft Soda Logo" class="brand-logo">
+                        <span>Craft Soda</span>
                     </a>
-                    <p class="opacity-75 mb-4">Dedicated to crafting authentic, organic kombucha that makes you feel
-                        alive. Visit our brewery and taste the difference.</p>
+                    <p class="opacity-75 mb-4">Dedicated to crafting authentic small-batch sodas with pure cane sugar and real botanicals. Taste the retro craft difference.</p>
                     <div class="social-links d-flex gap-3">
                         <a href="#"><i class="bi bi-instagram fs-4"></i></a>
                         <a href="#"><i class="bi bi-facebook fs-4"></i></a>
@@ -261,14 +253,16 @@
                 <div class="col-lg-2">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled mt-3">
+                        <li><a href="flavors.html" class="footer-link">Products</a></li>
+                        <li><a href="events.html" class="footer-link">Where to Buy</a></li>
+                        <li><a href="pricing.html" class="footer-link">Wholesale</a></li>
                         <li><a href="about.html" class="footer-link">Our Story</a></li>
-                        <li><a href="flavors.html" class="footer-link">Brews</a></li>
                         <li><a href="blog.html" class="footer-link">Journal</a></li>
-                        <li><a href="contact.html" class="footer-link">Support</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>Brewery Hours</h5>
+                    <h5>Tasting Room Hours</h5>
                     <ul class="list-unstyled mt-3 opacity-75">
                         <li class="mb-2">Mon - Fri: 10am - 8pm</li>
                         <li class="mb-2">Saturday: 9am - 10pm</li>
@@ -289,7 +283,7 @@
             </div>
             <hr class="mt-5 border-secondary">
             <div class="text-center mt-3 opacity-50">
-                <p>&copy; 2026 The Fizzy Kombucha Brewery. All rights reserved.</p>
+                <p>&copy; 2026 Craft Soda & Small-Batch Beverage Company. All rights reserved.</p>
             </div>
         </div>
     </footer>

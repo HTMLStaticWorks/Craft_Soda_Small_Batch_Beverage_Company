@@ -1,54 +1,202 @@
-/*--------------------
-Events Pixi Hero
---------------------*/
-.events-pixi-hero {
+/*--------------------------------------------------------------
+# Where to Buy Hero Section (Content Left, Image Right)
+--------------------------------------------------------------*/
+.events-hero-two-col {
     position: relative;
-    width: 100%;
-    height: 70vh;
-    min-height: 500px;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    min-height: 80vh;
+    background: radial-gradient(circle at 80% 35%, rgba(255, 100, 51, 0.14) 0%, transparent 60%),
+                radial-gradient(circle at 20% 75%, rgba(252, 163, 17, 0.08) 0%, transparent 50%),
+                var(--dark-bg, #16100d);
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--primary-bg, #0b0f14);
 }
 
-#canvas {
+.events-hero-bg-glow {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 20%;
+    right: 12%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 100, 51, 0.2) 0%, transparent 70%);
+    filter: blur(100px);
+    pointer-events: none;
     z-index: 1;
 }
 
-#canvas canvas {
-    display: block;
+.event-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1.4rem;
+    background: rgba(255, 100, 51, 0.12);
+    border: 1px solid rgba(255, 100, 51, 0.35);
+    border-radius: 50px;
+    color: var(--accent-color, #ff6433);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-.events-pixi-content {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    color: white;
-    pointer-events: none;
-    /* Allows mouse interactions to pass through to Pixi canvas */
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-    padding: 80px 20px 0;
-    /* Add top padding to account for fixed navbar */
-}
-
-.events-pixi-content .display-3 {
+.events-hero-two-col .display-2 {
     font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
     letter-spacing: -1px;
 }
 
-.events-pixi-content .text-accent {
-    color: var(--accent-color, #7ed957);
+.events-hero-two-col .text-accent {
+    color: var(--accent-color, #ff6433);
 }
 
-.events-pixi-content .opacity-75 {
-    font-family: 'Inter', sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
+.max-width-520 {
+    max-width: 520px;
+}
+
+/* Hero Visual & Image */
+.events-hero-visual-wrapper {
+    position: relative;
+    max-width: 540px;
+    padding: 1.5rem;
+}
+
+.events-image-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(255, 100, 51, 0.3) 0%, rgba(252, 163, 17, 0.12) 50%, transparent 70%);
+    filter: blur(70px);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.events-hero-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 100, 51, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.events-hero-img:hover {
+    transform: scale(1.02);
+}
+
+/* Floating Micro Badges */
+.events-floating-card {
+    position: absolute;
+    z-index: 4;
+    padding: 0.85rem 1.25rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(37, 26, 20, 0.88);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    pointer-events: auto;
+    animation: floatWidget 6s ease-in-out infinite alternate;
+}
+
+.events-floating-card.card-tl {
+    top: 5%;
+    left: -5%;
+    animation-delay: 0.2s;
+}
+
+.events-floating-card.card-br {
+    bottom: 8%;
+    right: -5%;
+    animation-delay: 1.2s;
+}
+
+.floating-icon-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* Light Theme */
+[data-theme="light"] .events-hero-two-col {
+    background: radial-gradient(circle at 80% 35%, rgba(255, 100, 51, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 20% 75%, rgba(252, 163, 17, 0.06) 0%, transparent 50%),
+                #fcf9f5;
+}
+
+[data-theme="light"] .events-hero-two-col .display-2 {
+    color: #16100d !important;
+}
+
+[data-theme="light"] .events-hero-two-col .opacity-75 {
+    color: rgba(22, 16, 13, 0.75) !important;
+}
+
+[data-theme="light"] .events-floating-card {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .events-floating-card .text-white {
+    color: #16100d !important;
+}
+
+/* RTL Support */
+[dir="rtl"] .events-hero-two-col .text-start {
+    text-align: right !important;
+}
+
+[dir="rtl"] .events-floating-card.card-tl {
+    left: auto;
+    right: -5%;
+}
+
+[dir="rtl"] .events-floating-card.card-br {
+    right: auto;
+    left: -5%;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .events-hero-two-col {
+        padding-top: 110px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .events-hero-two-col .text-start {
+        text-align: center !important;
+    }
+
+    .events-hero-two-col .d-flex {
+        justify-content: center;
+    }
+
+    .max-width-520 {
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .events-floating-card.card-tl {
+        left: 0;
+        top: 0;
+    }
+
+    .events-floating-card.card-br {
+        right: 0;
+        bottom: 0;
+    }
+
+    .events-hero-img {
+        height: 320px;
+    }
 }

@@ -1,5 +1,5 @@
 /**
- * Main JS for Kombucha Brewery Website
+ * Main JS for Craft Soda & Small-Batch Beverage Company
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -91,10 +91,28 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.style.padding = '0.5rem 0';
-            header.style.background = 'rgba(11, 15, 20, 0.98)';
+            header.style.background = 'rgba(22, 16, 13, 0.98)';
         } else {
             header.style.padding = '1rem 0';
-            header.style.background = 'rgba(11, 15, 20, 0.9)';
+            header.style.background = 'rgba(22, 16, 13, 0.9)';
         }
     });
 });
+
+/**
+ * Toggle Password Visibility
+ * @param {string} inputId - ID of the password input
+ * @param {HTMLElement} element - The toggle icon element
+ */
+function togglePassword(inputId, element) {
+    const input = document.getElementById(inputId);
+    const icon = element.querySelector('i');
+    
+    if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.replace('bi-eye', 'bi-eye-slash');
+    } else {
+        input.type = 'password';
+        icon.classList.replace('bi-eye-slash', 'bi-eye');
+    }
+}

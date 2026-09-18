@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | The Fizzy</title>
+    <title>Coming Soon | Craft Soda</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,17 +25,18 @@
     <style>
         .coming-soon-bg {
             min-height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/hero_bg.png');
+            background: linear-gradient(rgba(22, 16, 13, 0.88), rgba(22, 16, 13, 0.94)), url('assets/images/hero_bg.png');
             background-size: cover;
             background-position: center;
         }
 
         .countdown-box {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(10px);
             padding: 2rem;
             border-radius: 20px;
             min-width: 120px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
@@ -45,8 +46,8 @@
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm w-100">
         <div class="container pb-3">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-
-                <span>The Fizzy</span>
+                <img src="assets/images/logo.png" alt="Craft Soda Logo" class="brand-logo">
+                <span>Craft Soda</span>
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
@@ -61,12 +62,11 @@
                             <li><a class="dropdown-item text-white" href="home-2.html">Home 2</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="flavors.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Where to Buy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Wholesale</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="flavors.html">Flavors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="theme-controls d-none d-lg-flex ms-3">
@@ -79,10 +79,8 @@
 
     <div class="container text-center text-white py-5">
         <div class="mb-5 animate-on-scroll">
-            <img src="assets/images/logo.png" alt="Logo" width="80" height="80" class="mb-3">
-            <h1 class="display-3 fw-bold mb-4">Something <span class="text-accent">Big</span> is Brewing</h1>
-            <p class="lead opacity-75 mb-5 px-lg-5">We're fermenting something special. Be the first to taste our
-                revolutionary new flavored kombucha range. Our website and new brewery are just around the corner.</p>
+            <h1 class="display-3 fw-bold mb-4">Something <span class="text-accent">Big</span> is Simmering</h1>
+            <p class="lead opacity-75 mb-5 px-lg-5">We're kettle-simmering something special. Be the first to taste our limited-edition craft soda flavors and explore our vintage soda fountain experience. Our new small-batch releases are just around the corner.</p>
         </div>
 
         <div class="d-flex flex-wrap justify-content-center gap-3 mb-5 animate-on-scroll" style="animation-delay: 0.1s">
@@ -105,12 +103,12 @@
         </div>
 
         <div class="col-lg-6 mx-auto animate-on-scroll" style="animation-delay: 0.2s">
-            <form class="p-4 bg-dark rounded-5 shadow-lg">
+            <form class="p-4 bg-dark rounded-5 shadow-lg border border-secondary">
                 <h5 class="mb-3">Get on the VIP Taste List</h5>
                 <div class="input-group">
                     <input type="email" class="form-control bg-secondary border-0 text-white p-3"
                         placeholder="Enter your email...">
-                    <button class="btn btn-accent px-4 py-3 fw-bold">Notify Me</button>
+                    <button class="btn btn-accent px-4 py-3 fw-bold text-dark">Notify Me</button>
                 </div>
             </form>
         </div>

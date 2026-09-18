@@ -45,7 +45,7 @@
     left: -10%;
     width: 60vw;
     height: 60vw;
-    background: var(--accent-color, #7ed957);
+    background: var(--accent-color, #ff6433);
 }
 
 .orb-2 {
@@ -53,7 +53,7 @@
     right: -10%;
     width: 50vw;
     height: 50vw;
-    background: #00ff88;
+    background: #fca311;
     animation-duration: 20s;
     animation-direction: alternate-reverse;
 }
@@ -76,9 +76,9 @@
 .pulse-dot {
     width: 8px;
     height: 8px;
-    background: var(--accent-color, #7ed957);
+    background: var(--accent-color, #ff6433);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--accent-color, #7ed957);
+    box-shadow: 0 0 10px var(--accent-color, #ff6433);
     animation: fastPulse 1.5s infinite;
 }
 
@@ -191,7 +191,7 @@
     height: 48px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--accent-color, #7ed957);
+    border: 2px solid var(--accent-color, #ff6433);
     background: #000;
     padding: 2px;
 }
@@ -291,18 +291,18 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, #7ed957 0%, #3faa1d 100%);
-    border: 1px solid #3faa1d;
-    color: #041203 !important;
+    background: linear-gradient(135deg, #ff6433 0%, #d83d16 100%);
+    border: 1px solid #d83d16;
+    color: #ffffff !important;
     transition: all 0.3s;
     font-family: 'Outfit';
 }
 
 .btn-magnetic:hover {
-    background: linear-gradient(135deg, #92ec69 0%, #57c82e 100%);
-    color: #041203 !important;
+    background: linear-gradient(135deg, #ff7a4f 0%, #e64a19 100%);
+    color: #ffffff !important;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(126, 217, 87, 0.3);
+    box-shadow: 0 10px 20px rgba(255, 100, 51, 0.3);
 }
 
 @media (max-width: 991px) {

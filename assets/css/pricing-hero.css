@@ -2,7 +2,7 @@
     position: relative;
     min-height: 90vh;
     padding: 140px 0 120px;
-    background: radial-gradient(circle at top right, rgba(126, 217, 87, 0.35), rgba(11, 15, 20, 0) 50%),
+    background: radial-gradient(circle at top right, rgba(255, 100, 51, 0.35), rgba(11, 15, 20, 0) 50%),
         #10121a;
     overflow: hidden;
     color: #f8fbff;
@@ -15,7 +15,7 @@
     inset: 15% 5% auto auto;
     width: 420px;
     height: 420px;
-    background: radial-gradient(circle, rgba(126, 217, 87, 0.4), rgba(126, 217, 87, 0));
+    background: radial-gradient(circle, rgba(255, 100, 51, 0.4), rgba(255, 100, 51, 0));
     filter: blur(18px);
     z-index: 0;
 }
@@ -61,7 +61,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 0.85rem;
-    color: #7ed957;
+    color: #ff6433;
     margin-bottom: 1rem;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .hero-cta .btn-accent {
-    background: linear-gradient(135deg, #7ed957 0%, #3faa1d 100%);
-    color: #041203;
+    background: linear-gradient(135deg, #ff6433 0%, #d83d16 100%);
+    color: #ffffff;
     border: none;
     padding: 1.1rem 2.8rem;
     min-width: 240px;
@@ -90,7 +90,7 @@
 
 .hero-cta .btn-accent:hover {
     transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(126, 217, 87, 0.35);
+    box-shadow: 0 20px 40px rgba(255, 100, 51, 0.35);
 }
 
 .hero-cta .btn-outline-light {

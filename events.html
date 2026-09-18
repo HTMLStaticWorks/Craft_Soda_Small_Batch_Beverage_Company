@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events | The Fizzy</title>
+    <title>Where to Buy & Pop-Up Soda Bars | Craft Soda</title>
+    <meta name="description"
+        content="Find Craft Soda near you: indie grocers, retro soda fountain partners, specialty cafes, and weekend pop-up events.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,21 +23,21 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/events-hero.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/events-hero.css">
 </head>
 
 <body>
 
-    <!-- Header (Consistent) -->
+    <!-- Header / Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <span>The Fizzy</span>
+                <img src="assets/images/logo.png" alt="Craft Soda Logo" class="brand-logo">
+                <span>Craft Soda</span>
             </a>
 
             <div class="d-flex align-items-center ms-auto">
-
 
                 <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav">
@@ -51,16 +53,15 @@
                             <li><a class="dropdown-item text-white" href="home-2.html">Home 2</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="flavors.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Where to Buy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Wholesale</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="flavors.html">Flavors</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
 
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3">
-                    <a href="login.html" class="btn btn-outline-accent btn-sm me-3">Login</a>
                     <div class="theme-controls d-flex">
                         <button id="theme-toggle" class="control-btn"><i class="bi bi-sun"></i></button>
                         <button id="rtl-toggle" class="control-btn"><span class="rtl-text">LTR</span></button>
@@ -70,99 +71,83 @@
         </div>
     </nav>
 
-    <!-- Header Content / Pixi Hero -->
-    <section class="events-pixi-hero">
-        <div id="canvas"></div>
-        <div class="events-pixi-content">
-            <h1 class="display-3 fw-bold animate-on-scroll">Happening at <span class="text-accent">The Leaf</span></h1>
-            <p class="lead opacity-75 animate-on-scroll">Live music, community workshops, and exclusive tastings. Join
-                the bubbles!</p>
-        </div>
-    </section>
+    <!-- Where to Buy Hero Section (Content Left, Image Right) -->
+    <section class="events-hero-two-col">
+        <div class="events-hero-bg-glow"></div>
+        <div class="container position-relative z-3">
+            <div class="row align-items-center min-vh-75 g-5">
+                <!-- Left Column: Content -->
+                <div class="col-lg-6 text-start">
+                    <div class="event-hero-badge mb-4 animate-slide-up">
+                        <span class="pulse-dot"></span> Stockists &amp; Pop-Up Soda Bars
+                    </div>
+                    <h1 class="display-2 fw-bold text-white mb-4 animate-slide-up" style="animation-delay: 0.1s;">
+                        Where to Find <br><span class="text-accent">Craft Soda.</span>
+                    </h1>
+                    <p class="fs-5 opacity-75 mb-4 max-width-520 animate-slide-up" style="animation-delay: 0.2s;">
+                        Find our small-batch kettle-brewed sodas at our flagship Brooklyn tasting lounge, partner retro fountain bars, 120+ artisanal grocers, and weekend mobile fountain pop-up carts.
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-3 mb-5 animate-slide-up" style="animation-delay: 0.3s;">
+                        <a href="#locations-grid" class="btn btn-accent btn-lg px-4 py-3 fw-bold rounded-pill text-dark hero-btn-primary">
+                            Explore Locations <i class="bi bi-arrow-down ms-2"></i>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold rounded-pill hero-btn-secondary">
+                            Become a Stockist <i class="bi bi-box-seam ms-2"></i>
+                        </a>
+                    </div>
 
-    <!-- Events Intro Section -->
-    <section class="events-intro-section">
-        <div class="container animate-on-scroll">
-            <span class="text-accent fw-bold text-uppercase letter-spacing-2">Community & Culture</span>
-            <h2 class="events-intro-heading">The Community <span class="text-accent">Calendar</span></h2>
-            <p class="fs-5 opacity-75 max-width-700 mx-auto">Experience the art of living through our curated series of
-                live sessions, artisanal workshops, and exclusive tasting rituals.</p>
-        </div>
-    </section>
-
-    <!-- Premium Events Grid -->
-    <section class="section-padding bg-darker">
-        <div class="container">
-            <div class="row g-5">
-                <!-- Event 1 -->
-                <div class="col-lg-6 col-xl-4 animate-on-scroll">
-                    <div class="premium-event-card">
-                        <div class="event-card-image-wrapper">
-                            <div class="event-date-floating">
-                                <span class="day">25</span>
-                                <span class="month">Mar</span>
-                            </div>
-                            <img src="assets/images/event_music_acoustic.png" alt="Acoustic Sips"
-                                class="event-card-image">
+                    <!-- Quick Location Stats -->
+                    <div class="row g-4 pt-3 border-top border-secondary animate-slide-up" style="animation-delay: 0.4s;">
+                        <div class="col-4">
+                            <div class="h3 fw-bold text-accent mb-0">120+</div>
+                            <div class="small opacity-75 text-uppercase fw-semibold" style="font-size: 0.75rem;">Retail Stockists</div>
                         </div>
-                        <div class="card-body">
-                            <h3 class="mt-2 text-accent">Acoustic <br> Sips</h3>
-                            <div class="event-meta-modern">
-                                <span><i class="bi bi-music-note-beamed"></i> Live Performance</span>
-                                <span><i class="bi bi-clock"></i> 7:00 PM</span>
-                            </div>
-                            <p>An intimate evening of acoustic melodies paired with our most experimental small-batch
-                                brews.</p>
-                            <a href="contact.html" class="btn btn-event-premium">Join the Ritual — Free</a>
+                        <div class="col-4">
+                            <div class="h3 fw-bold text-accent mb-0">16+</div>
+                            <div class="small opacity-75 text-uppercase fw-semibold" style="font-size: 0.75rem;">Fountain Taps</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="h3 fw-bold text-accent mb-0">Weekly</div>
+                            <div class="small opacity-75 text-uppercase fw-semibold" style="font-size: 0.75rem;">Pop-Up Carts</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Event 2 -->
-                <div class="col-lg-6 col-xl-4 animate-on-scroll" style="animation-delay: 0.1s">
-                    <div class="premium-event-card">
-                        <div class="event-card-image-wrapper">
-                            <div class="event-date-floating">
-                                <span class="day">28</span>
-                                <span class="month">Mar</span>
-                            </div>
-                            <img src="assets/images/event_workshop_brewing.png" alt="Kombucha 101"
-                                class="event-card-image">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="mt-2 text-accent">Kombucha <br> Mastery</h3>
-                            <div class="event-meta-modern">
-                                <span><i class="bi bi-gear"></i> Workshop</span>
-                                <span><i class="bi bi-clock"></i> 11:00 AM</span>
-                            </div>
-                            <p>Learn the biological secrets of home brewing. Full extraction kit and starter SCOBY
-                                included.</p>
-                            <a href="contact.html" class="btn btn-event-premium">Reserve Spot — $45</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Right Column: Image Showcase -->
+                <div class="col-lg-6 position-relative text-center">
+                    <div class="events-hero-visual-wrapper position-relative mx-auto animate-float">
+                        <!-- Glow Backdrop -->
+                        <div class="events-image-glow"></div>
 
-                <!-- Event 3 -->
-                <div class="col-lg-6 col-xl-4 animate-on-scroll" style="animation-delay: 0.2s">
-                    <div class="premium-event-card">
-                        <div class="event-card-image-wrapper">
-                            <div class="event-date-floating">
-                                <span class="day">05</span>
-                                <span class="month">Apr</span>
-                            </div>
-                            <img src="assets/images/event_tasting_collection.png" alt="Tasting"
-                                class="event-card-image">
+                        <!-- Main Image -->
+                        <div class="events-image-container position-relative z-2">
+                            <img src="assets/images/event_lounge_interior.png" alt="Craft Soda Taproom Lounge" class="img-fluid rounded-5 shadow-2xl events-hero-img">
                         </div>
-                        <div class="card-body">
-                            <h3 class="mt-2 text-accent">Seasonal <br> Rituals</h3>
-                            <div class="event-meta-modern">
-                                <span><i class="bi bi-cup-hot"></i> Private Tasting</span>
-                                <span><i class="bi bi-clock"></i> 2:00 PM</span>
+
+                        <!-- Floating Micro Badge 1 (Top Left) -->
+                        <div class="events-floating-card card-tl glass-card">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="floating-icon-circle bg-accent text-dark">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="text-start">
+                                    <div class="fw-bold text-white small">Flagship Lounge</div>
+                                    <div class="text-muted" style="font-size: 0.75rem;">45 Fizz Lane, Brooklyn</div>
+                                </div>
                             </div>
-                            <p>An exclusive preview of our Summer Solstice collection. Taste the evolution of five
-                                unique
-                                blends.</p>
-                            <a href="contact.html" class="btn btn-event-premium">RSVP Invite Required</a>
+                        </div>
+
+                        <!-- Floating Micro Badge 2 (Bottom Right) -->
+                        <div class="events-floating-card card-br glass-card">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="floating-icon-circle bg-warning text-dark">
+                                    <i class="bi bi-cup-straw"></i>
+                                </div>
+                                <div class="text-start">
+                                    <div class="fw-bold text-white small">On Tap &amp; Cans</div>
+                                    <div class="text-muted" style="font-size: 0.75rem;">Ice Cold Pours Daily</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,34 +155,107 @@
         </div>
     </section>
 
-    <!-- Elite Event Lounge (Private Bookings) -->
+    <!-- Premium Events Grid -->
+    <section id="locations-grid" class="section-padding bg-darker">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Location 1 -->
+                <div class="col-lg-6 col-xl-4 animate-on-scroll">
+                    <div class="premium-event-card">
+                        <div class="event-card-image-wrapper">
+                            <div class="event-date-floating">
+                                <span class="day">01</span>
+                                <span class="month">HQ</span>
+                            </div>
+                            <img src="assets/images/event_music_acoustic.png" alt="Flagship Soda Lounge"
+                                class="event-card-image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2 text-accent">Flagship <br> Soda Lounge</h3>
+                            <div class="event-meta-modern">
+                                <span><i class="bi bi-geo-alt-fill"></i> 45 Fizz Lane, Brewing District</span>
+                                <span><i class="bi bi-clock"></i> Open Daily 10 AM</span>
+                            </div>
+                            <p>Our home taproom and retro soda fountain. Try all four flavor lines fresh on draft, purchase chilled 4-packs, and enjoy artisan floats.</p>
+                            <a href="contact.html" class="btn btn-event-premium">Visit Soda Fountain</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="col-lg-6 col-xl-4 animate-on-scroll" style="animation-delay: 0.1s">
+                    <div class="premium-event-card">
+                        <div class="event-card-image-wrapper">
+                            <div class="event-date-floating">
+                                <span class="day">150+</span>
+                                <span class="month">STORES</span>
+                            </div>
+                            <img src="assets/images/flavors.png" alt="Retail Stockists"
+                                class="event-card-image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2 text-accent">Artisanal <br> Retail Stockists</h3>
+                            <div class="event-meta-modern">
+                                <span><i class="bi bi-shop"></i> Natural Grocers & Co-ops</span>
+                                <span><i class="bi bi-box-seam"></i> 4-Packs & Singles</span>
+                            </div>
+                            <p>Carried in premier indie grocery markets, gourmet sandwich bars, and specialty bottle shops across the state.</p>
+                            <a href="contact.html" class="btn btn-event-premium">Locate Stockists</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 3 -->
+                <div class="col-lg-6 col-xl-4 animate-on-scroll" style="animation-delay: 0.2s">
+                    <div class="premium-event-card">
+                        <div class="event-card-image-wrapper">
+                            <div class="event-date-floating">
+                                <span class="day">POP</span>
+                                <span class="month">UP</span>
+                            </div>
+                            <img src="assets/images/event_tasting_collection.png" alt="Pop-Up Soda Cart"
+                                class="event-card-image">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="mt-2 text-accent">Pop-Up <br> Fountain Cart</h3>
+                            <div class="event-meta-modern">
+                                <span><i class="bi bi-cup-straw"></i> Farmers Markets & Festivals</span>
+                                <span><i class="bi bi-calendar-event"></i> Weekends</span>
+                            </div>
+                            <p>Our mobile brass fountain cart travels to local weekend farmers markets and culinary fairs pouring ice-cold draft sodas.</p>
+                            <a href="contact.html" class="btn btn-event-premium">View Tour Calendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elite Event Lounge (Private Bookings & Pop-up Catering) -->
     <section class="lounge-section">
         <div class="container overflow-visible">
             <div class="lounge-grid">
                 <div class="lounge-visual-wrapper animate-on-scroll">
-                    <img src="https://zapdrupalfilesprod.s3.eu-central-1.amazonaws.com/venuesonline/s3fs-public/1Event-Lounge.jpg?VersionId=3pYlto42haldr091nUFus3tud4VS76Ao"
-                        alt="Private Lounge" class="lounge-img">
+                    <img src="assets/images/event_lounge_interior.png"
+                        alt="Private Soda Bar Catering" class="lounge-img">
                 </div>
                 <div class="lounge-content animate-on-scroll">
-                    <span class="text-accent fw-bold text-uppercase letter-spacing-2">Private Bookings</span>
-                    <h2 class="display-3 fw-bold mt-3">The Event <br> <span class="text-accent">Lounge</span></h2>
-                    <p class="fs-5 opacity-75 mt-4 mb-5">Host your next milestone in a space that celebrates life,
-                        culture, and conscious luxury. Our private lounge is a sanctuary of emerald velvet and living
-                        fermentation.</p>
+                    <span class="text-accent fw-bold text-uppercase letter-spacing-2">Fountain Catering</span>
+                    <h2 class="display-3 fw-bold mt-3">The Retro Soda <br> <span class="text-accent">Bar Experience</span></h2>
+                    <p class="fs-5 opacity-75 mt-4 mb-5">Host your next milestone or corporate gathering with a genuine retro craft soda fountain bar. From brass taps to artisanal ice cream float stations, we bring the fizz to you.</p>
 
                     <div class="lounge-features mt-5">
                         <div class="lounge-feature-node">
-                            <h4>Bespoke Tap Takeover</h4>
-                            <p>Hand-pick four exclusive brews to serve your guests from our private ritual tap.</p>
+                            <h4>Vintage Draft Fountain</h4>
+                            <p>Hand-pick four signature soda flavors to pour for your guests from our portable brass draft bar.</p>
                         </div>
                         <div class="lounge-feature-node">
-                            <h4>Artisanal Catering</h4>
-                            <p>A plant-based menu curated by local masters to perfectly pair with our flavor profiles.
-                            </p>
+                            <h4>Artisanal Ice Cream Floats</h4>
+                            <p>Local small-batch vanilla and custard scoops paired with our craft cola, root beer, and cherry bloom.</p>
                         </div>
                         <div class="lounge-feature-node">
-                            <h4>Live Session Curation</h4>
-                            <p>From solo acoustic to deep-house vinyl sets, we curate the sound for your soul.</p>
+                            <h4>Custom Batch Run</h4>
+                            <p>Personalized commemorative labels and custom natural soda flavors crafted exclusively for your event.</p>
                         </div>
                     </div>
                 </div>
@@ -209,8 +267,8 @@
     <section class="events-bento-section">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll">
-                <span class="text-accent fw-bold text-uppercase letter-spacing-2">Event Rituals</span>
-                <h2 class="display-3 fw-bold mt-3">The Culture <span class="text-accent">Hub</span></h2>
+                <span class="text-accent fw-bold text-uppercase letter-spacing-2">The Soda Movement</span>
+                <h2 class="display-3 fw-bold mt-3">The Community <span class="text-accent">Hub</span></h2>
             </div>
 
             <div class="event-bento-grid">
@@ -218,28 +276,28 @@
                     <img src="assets/images/event_bento_people.png" alt="Community" class="event-bento-img">
                     <div class="event-bento-content">
                         <span class="text-accent small text-uppercase fw-bold">Connection</span>
-                        <h3>Community Gatherings</h3>
-                        <p class="opacity-75 small">Diverse spirits, shared bubbles, and meaningful conversation.</p>
+                        <h3>Community Soda Socials</h3>
+                        <p class="opacity-75 small">Shared laughter, genuine ingredients, and retro soda nostalgia for all ages.</p>
                     </div>
                 </div>
                 <div class="event-bento-item item-wide animate-on-scroll" style="animation-delay: 0.1s">
-                    <img src="assets/images/event_bento_eco.png" alt="Zero Waste" class="event-bento-img">
+                    <img src="assets/images/event_bento_eco.png" alt="Zero Waste Kegs" class="event-bento-img">
                     <div class="event-bento-content">
-                        <span class="text-accent small text-uppercase fw-bold">Earth First</span>
-                        <h3>Sustainability Rituals</h3>
+                        <span class="text-accent small text-uppercase fw-bold">Refill First</span>
+                        <h3>Stainless Steel Draft Kegs</h3>
                     </div>
                 </div>
                 <div class="event-bento-item animate-on-scroll" style="animation-delay: 0.2s">
-                    <img src="assets/images/event_bento_harvest.png" alt="Harvest" class="event-bento-img">
+                    <img src="assets/images/event_bento_harvest.png" alt="Real Botanicals" class="event-bento-img">
                     <div class="event-bento-content">
-                        <span class="text-accent small text-uppercase fw-bold">Botanicals</span>
-                        <h3>Source Stories</h3>
+                        <span class="text-accent small text-uppercase fw-bold">Pure Cane</span>
+                        <h3>Artisan Sourcing</h3>
                     </div>
                 </div>
                 <div class="event-bento-item animate-on-scroll" style="animation-delay: 0.3s">
                     <img src="assets/images/flavors.png" alt="Innovation" class="event-bento-img">
                     <div class="event-bento-content">
-                        <span class="text-accent small text-uppercase fw-bold">Live Lab</span>
+                        <span class="text-accent small text-uppercase fw-bold">Test Batches</span>
                         <h3>Flavor Lab</h3>
                     </div>
                 </div>
@@ -253,10 +311,10 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
-                        <span>The Fizzy</span>
+                        <img src="assets/images/logo.png" alt="Craft Soda Logo" class="brand-logo">
+                        <span>Craft Soda</span>
                     </a>
-                    <p class="opacity-75 mb-4">Dedicated to crafting authentic, organic kombucha that makes you feel
-                        alive. Visit our brewery and taste the difference.</p>
+                    <p class="opacity-75 mb-4">Dedicated to crafting playful small-batch sodas with pure cane sugar and real botanicals. Taste the retro craft difference.</p>
                     <div class="social-links d-flex gap-3">
                         <a href="#"><i class="bi bi-instagram fs-4"></i></a>
                         <a href="#"><i class="bi bi-facebook fs-4"></i></a>
@@ -266,14 +324,16 @@
                 <div class="col-lg-2">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled mt-3">
+                        <li><a href="flavors.html" class="footer-link">Products</a></li>
+                        <li><a href="events.html" class="footer-link">Where to Buy</a></li>
+                        <li><a href="pricing.html" class="footer-link">Wholesale</a></li>
                         <li><a href="about.html" class="footer-link">Our Story</a></li>
-                        <li><a href="flavors.html" class="footer-link">Brews</a></li>
                         <li><a href="blog.html" class="footer-link">Journal</a></li>
-                        <li><a href="contact.html" class="footer-link">Support</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h5>Brewery Hours</h5>
+                    <h5>Tasting Room Hours</h5>
                     <ul class="list-unstyled mt-3 opacity-75">
                         <li class="mb-2">Mon - Fri: 10am - 8pm</li>
                         <li class="mb-2">Saturday: 9am - 10pm</li>
@@ -294,17 +354,14 @@
             </div>
             <hr class="mt-5 border-secondary">
             <div class="text-center mt-3 opacity-50">
-                <p>&copy; 2026 The Fizzy Kombucha Brewery. All rights reserved.</p>
+                <p>&copy; 2026 Craft Soda & Small-Batch Beverage Company. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/pixi-assets.js"></script>
-    <script src="assets/js/events-hero-pixi.js"></script>
 </body>
 
 </html>

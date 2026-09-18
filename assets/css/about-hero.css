@@ -8,7 +8,7 @@
 
 .hero-section--bg {
     background:
-        linear-gradient(90deg, rgba(11, 15, 20, 0.94) 0%, rgba(11, 15, 20, 0.82) 52%, rgba(11, 15, 20, 0.92) 100%),
+        linear-gradient(90deg, rgba(22, 16, 13, 0.94) 0%, rgba(22, 16, 13, 0.82) 52%, rgba(22, 16, 13, 0.92) 100%),
         url("../images/taproom-interior.png") center center / cover no-repeat;
     border-radius: 0 0 60px 60px;
     z-index: 1;
@@ -95,21 +95,21 @@
 }
 
 .creative-cta-btn a:hover {
-    background: #7ed957;
-    color: #0b0f14;
-    border-color: #7ed957;
+    background: #ff6433;
+    color: #ffffff;
+    border-color: #ff6433;
 }
 
 .creative-cta-btn a:hover:before,
 .creative-cta-btn a:hover:after {
-    background: #7ed957;
+    background: #ff6433;
 }
 
 .creative-rating h3 {
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 0;
-    color: #7ed957;
+    color: #ff6433;
     line-height: 1.1;
 }
 
@@ -123,7 +123,7 @@
 
 .creative-hero--section .media-wrapper {
     position: absolute;
-    background: radial-gradient(circle at 70% 50%, rgba(126, 217, 87, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle at 70% 50%, rgba(255, 100, 51, 0.15) 0%, transparent 70%);
     top: 0;
     bottom: 0;
     right: 0;

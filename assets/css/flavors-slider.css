@@ -172,6 +172,27 @@ Flavors Unique Slider Styles
 .box2 .details h1 {
     color: #e91e63;
 }
+/* Color Themes */
+.box1 {
+    background-color: #1a0f05;
+}
+
+.box1 .details h1 {
+    color: #f4b41a;
+}
+
+.box1 button {
+    background-color: #f4b41a;
+    color: #000;
+}
+
+.box2 {
+    background-color: #1a0510;
+}
+
+.box2 .details h1 {
+    color: #e91e63;
+}
 
 .box2 button {
     background-color: #e91e63;
@@ -179,15 +200,15 @@ Flavors Unique Slider Styles
 }
 
 .box3 {
-    background-color: #0b1a05;
+    background-color: #1a1005;
 }
 
 .box3 .details h1 {
-    color: #7ed957;
+    color: #ff9800;
 }
 
 .box3 button {
-    background-color: #7ed957;
+    background-color: #ff9800;
     color: #000;
 }
 
@@ -238,8 +259,8 @@ Flavors Unique Slider Styles
 
 .slider-prev:hover,
 .slider-next:hover {
-    background: #7ed957;
-    color: #000;
+    background: #ff6433;
+    color: #ffffff;
 }
 
 .slider-prev {
@@ -269,6 +290,6 @@ Flavors Unique Slider Styles
 }
 
 .trail-item.active {
-    background: #7ed957;
+    background: #ff6433;
     width: 60px;
 }

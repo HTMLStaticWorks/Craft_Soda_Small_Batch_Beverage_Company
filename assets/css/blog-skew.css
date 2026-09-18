@@ -118,7 +118,7 @@ Skewed One Page Scroll Hero
 }
 
 .skw-page__link {
-    color: var(--accent-color, #7ed957);
+    color: var(--accent-color, #ff6433);
     text-decoration: none;
     font-weight: bold;
     font-family: 'Outfit', sans-serif;
@@ -130,11 +130,11 @@ Skewed One Page Scroll Hero
 }
 
 .skw-page__link:hover {
-    text-shadow: 0 0 10px rgba(126, 217, 87, 0.4);
+    text-shadow: 0 0 10px rgba(255, 100, 51, 0.4);
 }
 
 .text-accent {
-    color: var(--accent-color, #7ed957);
+    color: var(--accent-color, #ff6433);
 }
 
 /* Backgrounds - Alternating imagery based on context */
@@ -209,8 +209,8 @@ Skewed One Page Scroll Hero
 }
 
 .newsletter-sidebar {
-    background-color: #7ed957;
-    color: #0b0f14;
+    background-color: #ff6433;
+    color: #ffffff;
 }
 
 [data-theme="dark"] .newsletter-sidebar {
@@ -239,9 +239,9 @@ Skewed One Page Scroll Hero
 /* Blog Hero */
 .blog-hero {
     position: relative;
-    background: radial-gradient(circle at 20% 30%, rgba(126, 217, 87, 0.25), transparent 45%),
+    background: radial-gradient(circle at 20% 30%, rgba(255, 100, 51, 0.25), transparent 45%),
         radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08), transparent 40%),
-        #0b0f14;
+        #16100d;
     padding: 120px 0 80px;
     overflow: hidden;
     color: #ffffff;
@@ -255,9 +255,9 @@ Skewed One Page Scroll Hero
 }
 
 .blog-hero-actions .btn-accent {
-    background-color: #7ed957;
-    border-color: #3faa1d;
-    color: #0b0f14 !important;
+    background-color: #ff6433;
+    border-color: #d83d16;
+    color: #ffffff !important;
     font-weight: 700;
 }
 
@@ -278,7 +278,7 @@ Skewed One Page Scroll Hero
     height: 480px;
     top: 10%;
     right: 5%;
-    background: radial-gradient(circle, rgba(126, 217, 87, 0.35), transparent 70%);
+    background: radial-gradient(circle, rgba(255, 100, 51, 0.35), transparent 70%);
     filter: blur(10px);
     z-index: 0;
 }
@@ -301,7 +301,7 @@ Skewed One Page Scroll Hero
 .hero-pretitle {
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #7ed957;
+    color: #ff6433;
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
@@ -341,7 +341,7 @@ Skewed One Page Scroll Hero
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: rgba(126, 217, 87, 0.5);
+    background: rgba(255, 100, 51, 0.5);
     bottom: -40px;
     right: 5%;
     animation: pulseOrb 5s ease-in-out infinite;

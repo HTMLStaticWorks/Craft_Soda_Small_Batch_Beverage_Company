@@ -1,6 +1,6 @@
 /**
  * Flavors Slider Logic
- * Adapted for The Fizzy Brewery
+ * Adapted for Craft Soda
  */
 
 document.addEventListener('DOMContentLoaded', () => {
