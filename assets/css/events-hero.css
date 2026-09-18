@@ -126,6 +126,20 @@
     flex-shrink: 0;
 }
 
+.events-floating-card .text-muted {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.events-floating-card .floating-icon-circle.bg-accent {
+    background-color: #ff6433 !important;
+    color: #ffffff !important;
+}
+
+.events-floating-card .floating-icon-circle.bg-warning {
+    background-color: #fca311 !important;
+    color: #16100d !important;
+}
+
 /* Light Theme */
 [data-theme="light"] .events-hero-two-col {
     background: radial-gradient(circle at 80% 35%, rgba(255, 100, 51, 0.08) 0%, transparent 60%),
@@ -150,6 +164,11 @@
 [data-theme="light"] .events-floating-card .text-white {
     color: #16100d !important;
 }
+
+[data-theme="light"] .events-floating-card .text-muted {
+    color: rgba(22, 16, 13, 0.7) !important;
+}
+
 
 /* RTL Support */
 [dir="rtl"] .events-hero-two-col .text-start {

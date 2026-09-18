@@ -97,6 +97,30 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.background = 'rgba(22, 16, 13, 0.9)';
         }
     });
+
+    // Scroll to Top Button (Available on all pages)
+    let scrollBtn = document.getElementById('scroll-to-top');
+    if (!scrollBtn) {
+        scrollBtn = document.createElement('button');
+        scrollBtn.id = 'scroll-to-top';
+        scrollBtn.className = 'scroll-to-top-btn';
+        scrollBtn.setAttribute('aria-label', 'Scroll to top');
+        scrollBtn.setAttribute('type', 'button');
+        scrollBtn.innerHTML = '<i class="bi bi-chevron-up"></i>';
+        document.body.appendChild(scrollBtn);
+    }
+
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 250) {
+            scrollBtn.classList.add('visible');
+        } else {
+            scrollBtn.classList.remove('visible');
+        }
+    });
 });
 
 /**

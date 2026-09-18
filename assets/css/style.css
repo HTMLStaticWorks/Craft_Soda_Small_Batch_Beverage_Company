@@ -830,7 +830,27 @@ footer .btn-accent {
     background-color: #f4fbf4 !important;
 }
 
-/* Flavors page: keep Classics card badge text readable in light theme */
+/* Flavors page: badge styles for both dark and light themes */
+.badge.bg-accent,
+.bg-accent {
+    background-color: var(--accent-color) !important;
+    color: #16100d !important;
+}
+
+[data-theme="dark"] #wild-berry-bloom .badge.bg-accent,
+[data-theme="dark"] .badge.bg-accent {
+    background-color: var(--accent-color) !important;
+    color: #16100d !important;
+}
+
+[data-theme="dark"] #ginger-ritual .badge.bg-dark,
+[data-theme="dark"] #wild-berry-bloom .badge.bg-dark,
+[data-theme="dark"] #emerald-mint .badge.bg-dark {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.22) !important;
+}
+
 [data-theme="light"] #ginger-ritual .badge.bg-dark,
 [data-theme="light"] #wild-berry-bloom .badge.bg-dark,
 [data-theme="light"] #emerald-mint .badge.bg-dark {
@@ -843,6 +863,7 @@ footer .btn-accent {
     background-color: var(--accent-color) !important;
     color: #112a0d !important;
 }
+
 
 /* Contact page: improve Get in Touch contrast in light theme */
 [data-theme="light"] #contact-section .col-lg-5>.p-5.bg-dark {
@@ -1547,20 +1568,93 @@ footer {
     padding-inline-start: 10px;
 }
 
+footer .form-control,
 .footer .form-control {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: var(--text-color);
-    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    color: #ffffff !important;
+    border-radius: 999px 0 0 999px;
     box-shadow: none;
     transition: border-color 0.3s ease, background 0.3s ease;
 }
 
+footer .form-control::placeholder,
+.footer .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1 !important;
+}
+
+footer .form-control:focus,
 .footer .form-control:focus {
-    border-color: rgba(255, 100, 51, 0.8);
-    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--accent-color) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 100, 51, 0.25) !important;
     outline: none;
 }
+
+[data-theme="light"] footer .form-control,
+[data-theme="light"] .footer .form-control {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.18) !important;
+    color: #16100d !important;
+}
+
+[data-theme="light"] footer .form-control::placeholder,
+[data-theme="light"] .footer .form-control::placeholder {
+    color: rgba(22, 16, 13, 0.55) !important;
+    opacity: 1 !important;
+}
+
+[data-theme="light"] footer .form-control:focus,
+[data-theme="light"] .footer .form-control:focus {
+    border-color: var(--accent-color) !important;
+    background: #ffffff !important;
+    color: #16100d !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 100, 51, 0.2) !important;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #d83d16 100%);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 10px 25px rgba(255, 100, 51, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(255, 100, 51, 0.6);
+    color: #ffffff;
+}
+
+[dir="rtl"] .scroll-to-top-btn {
+    right: auto;
+    left: 30px;
+}
+
 
 .social-links a {
     width: 42px;
@@ -1872,6 +1966,11 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+[data-theme="light"] .event-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
 .event-date {
     font-weight: 600;
     color: var(--accent-color);
@@ -2022,6 +2121,11 @@ body {
 [data-theme="dark"] .taste-meter {
     background: rgba(255, 255, 255, 0.16);
 }
+
+[data-theme="light"] .taste-meter {
+    background: rgba(0, 0, 0, 0.12);
+}
+
 
 .taste-fill {
     height: 100%;
@@ -3617,6 +3721,18 @@ body {
 }
 
 @media (max-width: 991px) {
+    #locations-grid.section-padding {
+        padding-bottom: 2rem;
+    }
+
+    .lounge-section {
+        padding-block: 2.5rem;
+    }
+
+    .lounge-visual-wrapper {
+        padding: 0.5rem;
+    }
+
     .event-bento-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -3628,6 +3744,20 @@ body {
         grid-column: span 1;
         grid-row: span 1;
         height: 380px;
+    }
+}
+
+@media (max-width: 575px) {
+    #locations-grid.section-padding {
+        padding-bottom: 1.5rem;
+    }
+
+    .lounge-section {
+        padding-block: 1.5rem;
+    }
+
+    .lounge-visual-wrapper {
+        padding: 0;
     }
 }
 
@@ -4047,17 +4177,38 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.35rem 0.9rem;
+    padding: 0.45rem 1.1rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid transparent;
+    background: rgba(255, 100, 51, 0.12);
+    border: 1px solid rgba(255, 100, 51, 0.3);
+    color: var(--accent-color) !important;
     transition: all 0.3s ease;
 }
 
 .harvest-note-link:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #ffffff !important;
     text-decoration: none;
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(255, 100, 51, 0.35);
+}
+
+.harvest-note-link:hover i {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .harvest-note-link {
+    background: rgba(255, 100, 51, 0.08);
+    border: 1px solid rgba(255, 100, 51, 0.25);
+    color: var(--accent-color) !important;
+}
+
+[data-theme="light"] .harvest-note-link:hover {
+    background: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 16px rgba(255, 100, 51, 0.3);
 }
 
 .icon-sm {
@@ -4066,6 +4217,15 @@ body {
     justify-content: center;
     width: 45px;
     height: 45px;
+}
+
+.icon-sm.bg-accent {
+    background-color: var(--accent-color) !important;
+    color: #ffffff !important;
+}
+
+.icon-sm.bg-accent i {
+    color: #ffffff !important;
 }
 
 /* Localized Animation for Harvest Section */
@@ -4195,13 +4355,22 @@ body {
 
 /* More Ways to Connect tweaks */
 .more-connect h2,
-.more-connect p,
 .more-connect .lead {
     color: var(--text-color);
 }
 
+.more-connect .glass-card h5,
+[data-theme="light"] .more-connect .glass-card h5 {
+    color: #ffffff !important;
+}
+
+.more-connect .glass-card p,
+[data-theme="light"] .more-connect .glass-card p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
 [data-theme="light"] .more-connect h2,
-[data-theme="light"] .more-connect p,
+[data-theme="light"] .more-connect > .container > .row:first-child p,
 [data-theme="light"] .more-connect .lead {
     color: #0b0f14;
 }

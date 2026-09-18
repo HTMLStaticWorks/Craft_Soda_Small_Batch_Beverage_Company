@@ -113,6 +113,24 @@ body {
     color: var(--text-color);
 }
 
+[data-theme="light"] .stat-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .stat-card h5,
+[data-theme="light"] .stat-card p {
+    text-shadow: none;
+}
+
+[data-theme="light"] .stat-card:hover {
+    background: #ffffff;
+    border-color: var(--accent);
+    box-shadow: 0 15px 35px rgba(255, 100, 51, 0.15);
+}
+
+
 .intelligence-section .row {
     align-items: stretch;
 }
@@ -167,6 +185,11 @@ body {
     top: 0;
     transform: translateX(-50%);
 }
+
+[data-theme="light"] .cycle-line {
+    background: rgba(0, 0, 0, 0.15);
+}
+
 
 @media (max-width: 768px) {
     .cycle-step {
