@@ -181,8 +181,23 @@
     }
 
     .creative-hero--section .media-wrapper {
-        width: 40%;
+        width: 42%;
         padding-right: 50px;
+    }
+
+    .media-wrapper .home-avatar {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .creative-hero--section .media-wrapper {
+        width: 46%;
+        padding-right: 30px;
+    }
+
+    .media-wrapper .home-avatar {
+        max-width: 95%;
     }
 }
 

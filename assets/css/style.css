@@ -113,6 +113,23 @@ h2 {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+[data-theme="light"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(30,30,30,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 1.5px solid var(--accent-color) !important;
+    border-radius: 6px;
+    padding: 0.35rem 0.55rem;
+    color: var(--accent-color);
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(255, 100, 51, 0.35) !important;
+}
+
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: 800;
@@ -167,7 +184,7 @@ h2 {
 }
 
 /* Center Navbar Dropdowns on Desktop */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .navbar-nav .dropdown-menu {
         left: 50% !important;
         right: auto !important;
@@ -3135,7 +3152,7 @@ body {
     }
 
     .craft-main-image {
-        max-width: 300px;
+        max-width: 420px;
         margin-bottom: 3rem;
     }
 }
