@@ -93,7 +93,7 @@ Flavors Unique Slider Styles
 
 .flavors-main-slider .box .details h1 {
     font-size: 5rem;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 1rem;
     font-family: 'Outfit', sans-serif;
     line-height: 1;
@@ -101,6 +101,7 @@ Flavors Unique Slider Styles
 
 .flavors-main-slider .box .details p {
     font-size: 1.2rem;
+    font-weight: 450;
     max-width: 400px;
     opacity: 0.8;
     margin-bottom: 2rem;

@@ -121,6 +121,20 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollBtn.classList.remove('visible');
         }
     });
+
+    // Blog Category Click Handler & Sync
+    const categoryBtns = document.querySelectorAll('.blog-category-btn');
+    if (categoryBtns.length > 0) {
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const text = btn.querySelector('span')?.innerText?.trim();
+                categoryBtns.forEach(b => {
+                    const match = b.querySelector('span')?.innerText?.trim() === text;
+                    b.classList.toggle('active', match);
+                });
+            });
+        });
+    }
 });
 
 /**

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="barBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1b12"/>
+      <stop offset="50%" stop-color="#160e0a"/>
+      <stop offset="100%" stop-color="#0a0503"/>
+    </linearGradient>
+    <linearGradient id="copperTap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="30" fill="url(#barBg)"/>
+  <!-- Tap Towers -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="150" width="600" height="250" rx="15" fill="#1f140e" stroke="#382419" stroke-width="4"/>
+    <line x1="0" y1="180" x2="600" y2="180" stroke="#ff6433" stroke-width="3" opacity="0.6"/>
+    
+    <!-- 4 Copper Taps -->
+    <g transform="translate(80, 40)">
+      <rect x="0" y="0" width="24" height="120" rx="6" fill="url(#copperTap)"/>
+      <circle cx="12" cy="0" r="16" fill="#ea580c"/>
+    </g>
+    <g transform="translate(220, 40)">
+      <rect x="0" y="0" width="24" height="120" rx="6" fill="url(#copperTap)"/>
+      <circle cx="12" cy="0" r="16" fill="#d97706"/>
+    </g>
+    <g transform="translate(360, 40)">
+      <rect x="0" y="0" width="24" height="120" rx="6" fill="url(#copperTap)"/>
+      <circle cx="12" cy="0" r="16" fill="#be123c"/>
+    </g>
+    <g transform="translate(500, 40)">
+      <rect x="0" y="0" width="24" height="120" rx="6" fill="url(#copperTap)"/>
+      <circle cx="12" cy="0" r="16" fill="#059669"/>
+    </g>
+  </g>
+  <text x="400" y="90" font-family="'Outfit', sans-serif" font-size="28" font-weight="900" fill="#fff" text-anchor="middle">FLAGSHIP TAPROOM LOUNGE</text>
+  <text x="400" y="125" font-family="'Inter', sans-serif" font-size="14" fill="#ff6433" text-anchor="middle" letter-spacing="3">16 LIVE DRAFT FOUNTAIN TAPS • BROOKLYN, NY</text>
+</svg>

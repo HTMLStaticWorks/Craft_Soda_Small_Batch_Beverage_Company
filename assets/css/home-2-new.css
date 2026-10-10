@@ -17,7 +17,8 @@ body {
 
 /* SECTION 1: HERO (THE CORE SODA) */
 .new-hero {
-    height: 100vh;
+    min-height: 85vh;
+    height: 85vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -75,7 +76,7 @@ body {
 
 .hero-title-main {
     font-size: 12vw;
-    font-weight: 900;
+    font-weight: 600;
     font-family: 'Outfit', sans-serif;
     line-height: 0.85;
     letter-spacing: -5px;

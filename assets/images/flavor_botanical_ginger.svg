@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="gingerBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#021a12"/>
+    </radialGradient>
+    <linearGradient id="gingerLiquid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="35%" stop-color="#10b981"/>
+      <stop offset="70%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="30" fill="url(#gingerBg)"/>
+  <circle cx="300" cy="300" r="220" fill="#34d399" opacity="0.15"/>
+  <g transform="translate(100, 30)">
+    <rect x="180" y="40" width="40" height="20" rx="4" fill="#6ee7b7"/>
+    <path d="M185,60 L215,60 L215,160 L245,240 C255,260 260,285 260,315 L260,490 C260,515 240,530 200,530 C160,530 140,515 140,490 L140,315 C140,285 145,260 155,240 L185,160 Z" fill="url(#gingerLiquid)"/>
+    <rect x="150" y="280" width="100" height="140" rx="10" fill="#f0fdf4" stroke="#047857" stroke-width="2"/>
+    <text x="200" y="310" font-family="'Outfit', sans-serif" font-size="9" font-weight="bold" fill="#059669" text-anchor="middle">BOTANICAL LINE</text>
+    <text x="200" y="335" font-family="'Outfit', sans-serif" font-size="15" font-weight="900" fill="#1c1917" text-anchor="middle">GINGER</text>
+    <text x="200" y="355" font-family="'Outfit', sans-serif" font-size="15" font-weight="900" fill="#059669" text-anchor="middle">SPICE</text>
+    <text x="200" y="385" font-family="'Inter', sans-serif" font-size="7" fill="#065f46" text-anchor="middle">WHOLE PERUVIAN ROOTS</text>
+    <text x="200" y="400" font-family="'Inter', sans-serif" font-size="6.5" font-weight="bold" fill="#1c1917" text-anchor="middle">COLD-PRESSED • 330ML</text>
+  </g>
+</svg>

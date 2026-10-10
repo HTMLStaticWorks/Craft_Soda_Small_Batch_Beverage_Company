@@ -1,7 +1,7 @@
 /* Contact Hero Advanced Styles */
 .contact-hero {
     position: relative;
-    padding: 160px 0 80px;
+    padding: 130px 0 90px;
     background-color: var(--primary-bg, #0b0f14);
     overflow: hidden;
     min-height: 85vh;
@@ -68,9 +68,10 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: var(--accent-color, #ff6433);
 }
 
 .pulse-dot {
@@ -82,12 +83,26 @@
     animation: fastPulse 1.5s infinite;
 }
 
-.contact-hero .display-1 {
-    font-family: 'Outfit', sans-serif;
-    letter-spacing: -2px;
-    line-height: 1.1;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    color: #f9fbff;
+.contact-hero .contact-hero-title,
+.contact-hero .display-1,
+.contact-hero h1 {
+    font-family: 'Outfit', sans-serif !important;
+    font-size: clamp(2.5rem, 4.5vw, 3.8rem) !important;
+    font-weight: 600 !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.5px !important;
+    color: #ffffff !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.contact-hero .hero-lead,
+.contact-hero p.fs-4 {
+    font-size: clamp(1.05rem, 1.25vw, 1.2rem) !important;
+    line-height: 1.65 !important;
+    font-weight: 450 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    max-width: 540px !important;
+    margin-bottom: 2rem !important;
 }
 
 /* Visuals & Masks */
@@ -348,7 +363,11 @@
 }
 
 [data-theme="light"] .contact-hero .display-1,
+[data-theme="light"] .contact-hero .contact-hero-title,
+[data-theme="light"] .contact-hero h1,
 [data-theme="light"] .contact-hero .lead,
+[data-theme="light"] .contact-hero .hero-lead,
+[data-theme="light"] .contact-hero p,
 [data-theme="light"] .contact-hero .text-accent,
 [data-theme="light"] .contact-hero .contact-badge,
 [data-theme="light"] .contact-hero .response-badge p,
@@ -374,4 +393,83 @@
 
 [data-theme="light"] .contact-hero .avatar-group+span strong {
     color: #0b0f14 !important;
+}
+
+/* Contact Form & Card Styles */
+.contact-card-wrapper {
+    background-color: var(--primary-color, #16100d);
+    border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.contact-info-highlight {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form-input {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1.5px solid rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+}
+
+.contact-form-input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color, #ff6433);
+    box-shadow: 0 0 0 3px rgba(255, 100, 51, 0.25);
+    color: #ffffff;
+    outline: none;
+}
+
+.contact-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+select.contact-form-input option {
+    background-color: #16100d;
+    color: #ffffff;
+}
+
+/* Light Theme Form Input & Card Fixes */
+[data-theme="light"] .contact-card-wrapper {
+    background-color: #ffffff !important;
+    border-color: rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="light"] .contact-card-wrapper h2,
+[data-theme="light"] .contact-card-wrapper li,
+[data-theme="light"] .contact-card-wrapper h5 {
+    color: #16100d !important;
+}
+
+[data-theme="light"] .contact-info-highlight {
+    background-color: #f7ede5 !important;
+}
+
+[data-theme="light"] .contact-info-highlight h5,
+[data-theme="light"] .contact-info-highlight p {
+    color: #16100d !important;
+}
+
+[data-theme="light"] .contact-form-input {
+    background-color: #ffffff !important;
+    border: 1.5px solid #d8dee4 !important;
+    color: #16100d !important;
+}
+
+[data-theme="light"] .contact-form-input:focus {
+    background-color: #ffffff !important;
+    border-color: var(--accent-color, #ff6433) !important;
+    box-shadow: 0 0 0 3px rgba(255, 100, 51, 0.25) !important;
+    color: #16100d !important;
+}
+
+[data-theme="light"] .contact-form-input::placeholder {
+    color: #6c757d !important;
+}
+
+[data-theme="light"] select.contact-form-input option {
+    background-color: #ffffff;
+    color: #16100d;
 }

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cartBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="30" fill="url(#cartBg)"/>
+  <!-- Vintage Cart Canopy -->
+  <path d="M150,160 L650,160 L620,240 L180,240 Z" fill="#ea580c"/>
+  <path d="M220,160 L280,160 L270,240 L230,240 Z" fill="#fff"/>
+  <path d="M360,160 L420,160 L410,240 L370,240 Z" fill="#fff"/>
+  <path d="M500,160 L560,160 L550,240 L510,240 Z" fill="#fff"/>
+
+  <!-- Cart Counter & Wheels -->
+  <rect x="180" y="240" width="440" height="200" rx="10" fill="#78350f" stroke="#451a03" stroke-width="4"/>
+  <rect x="230" y="270" width="340" height="80" rx="8" fill="#1c1917"/>
+  <text x="400" y="318" font-family="'Outfit', sans-serif" font-size="20" font-weight="bold" fill="#ff6433" text-anchor="middle">MOBILE SODA BAR</text>
+  
+  <!-- Wheels -->
+  <circle cx="260" cy="460" r="50" fill="none" stroke="#d97706" stroke-width="12"/>
+  <circle cx="260" cy="460" r="16" fill="#d97706"/>
+  <circle cx="540" cy="460" r="50" fill="none" stroke="#d97706" stroke-width="12"/>
+  <circle cx="540" cy="460" r="16" fill="#d97706"/>
+
+  <text x="400" y="90" font-family="'Outfit', sans-serif" font-size="28" font-weight="900" fill="#fff" text-anchor="middle">WEEKEND POP-UP CARTS</text>
+  <text x="400" y="125" font-family="'Inter', sans-serif" font-size="14" fill="#fbbf24" text-anchor="middle" letter-spacing="3">FESTIVALS • MARKETS • PRIVATE EVENTS</text>
+</svg>

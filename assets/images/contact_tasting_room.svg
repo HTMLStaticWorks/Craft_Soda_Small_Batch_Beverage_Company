@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="flightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#261a14"/>
+      <stop offset="100%" stop-color="#0c0705"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="30" fill="url(#flightBg)"/>
+  
+  <!-- Flight Board -->
+  <rect x="100" y="320" width="600" height="80" rx="20" fill="#78350f" stroke="#451a03" stroke-width="4"/>
+  
+  <!-- 4 Tasting Glasses with different sodas -->
+  <!-- Glass 1: Cola -->
+  <g transform="translate(160, 160)">
+    <path d="M0,0 L60,0 L50,170 L10,170 Z" fill="#451a03" opacity="0.9"/>
+    <ellipse cx="30" cy="0" rx="30" ry="8" fill="#78350f"/>
+    <text x="30" y="210" font-family="'Outfit', sans-serif" font-size="12" font-weight="bold" fill="#fdba74" text-anchor="middle">Cola</text>
+  </g>
+
+  <!-- Glass 2: Cherry -->
+  <g transform="translate(300, 160)">
+    <path d="M0,0 L60,0 L50,170 L10,170 Z" fill="#9f1239" opacity="0.9"/>
+    <ellipse cx="30" cy="0" rx="30" ry="8" fill="#fb7185"/>
+    <text x="30" y="210" font-family="'Outfit', sans-serif" font-size="12" font-weight="bold" fill="#fbcfe8" text-anchor="middle">Cherry</text>
+  </g>
+
+  <!-- Glass 3: Vanilla Cream -->
+  <g transform="translate(440, 160)">
+    <path d="M0,0 L60,0 L50,170 L10,170 Z" fill="#d97706" opacity="0.9"/>
+    <ellipse cx="30" cy="0" rx="30" ry="8" fill="#fde68a"/>
+    <text x="30" y="210" font-family="'Outfit', sans-serif" font-size="12" font-weight="bold" fill="#fef08a" text-anchor="middle">Cream</text>
+  </g>
+
+  <!-- Glass 4: Ginger Fizz -->
+  <g transform="translate(580, 160)">
+    <path d="M0,0 L60,0 L50,170 L10,170 Z" fill="#059669" opacity="0.9"/>
+    <ellipse cx="30" cy="0" rx="30" ry="8" fill="#6ee7b7"/>
+    <text x="30" y="210" font-family="'Outfit', sans-serif" font-size="12" font-weight="bold" fill="#a7f3d0" text-anchor="middle">Ginger</text>
+  </g>
+
+  <text x="400" y="80" font-family="'Outfit', sans-serif" font-size="28" font-weight="900" fill="#fff" text-anchor="middle">SODA TASTING FLIGHT</text>
+  <text x="400" y="115" font-family="'Inter', sans-serif" font-size="14" fill="#ff6433" text-anchor="middle" letter-spacing="3">CONNECT WITH OUR MASTER SODA MAKERS</text>
+</svg>

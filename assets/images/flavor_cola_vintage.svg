@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="colaBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#0f0702"/>
+    </radialGradient>
+    <linearGradient id="colaLiquid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f1105"/>
+      <stop offset="30%" stop-color="#78350f"/>
+      <stop offset="70%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#1f1105"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="30" fill="url(#colaBg)"/>
+  <circle cx="300" cy="300" r="220" fill="#ff6433" opacity="0.12"/>
+  <!-- Bottle Shape -->
+  <g transform="translate(100, 30)">
+    <rect x="180" y="40" width="40" height="20" rx="4" fill="#d97706"/>
+    <path d="M185,60 L215,60 L215,160 L245,240 C255,260 260,285 260,315 L260,490 C260,515 240,530 200,530 C160,530 140,515 140,490 L140,315 C140,285 145,260 155,240 L185,160 Z" fill="url(#colaLiquid)"/>
+    <!-- Label -->
+    <rect x="150" y="280" width="100" height="140" rx="10" fill="#fff7ed" stroke="#78350f" stroke-width="2"/>
+    <text x="200" y="310" font-family="'Outfit', sans-serif" font-size="9" font-weight="bold" fill="#ea580c" text-anchor="middle">VINTAGE LINE</text>
+    <text x="200" y="335" font-family="'Outfit', sans-serif" font-size="16" font-weight="900" fill="#1c1917" text-anchor="middle">CLASSIC</text>
+    <text x="200" y="355" font-family="'Outfit', sans-serif" font-size="16" font-weight="900" fill="#ea580c" text-anchor="middle">COLA</text>
+    <text x="200" y="385" font-family="'Inter', sans-serif" font-size="7" fill="#78350f" text-anchor="middle">SLOW-SIMMERED KOLA NUT</text>
+    <text x="200" y="400" font-family="'Inter', sans-serif" font-size="6.5" font-weight="bold" fill="#1c1917" text-anchor="middle">100% CANE SUGAR • 330ML</text>
+  </g>
+</svg>

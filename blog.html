@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/images/logo.png" alt="Craft Soda Logo" class="brand-logo">
+                <img src="assets/images/logo.svg" alt="Craft Soda Logo" class="brand-logo">
                 <span>Craft Soda</span>
             </a>
 
@@ -57,11 +57,13 @@
                     <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3">
+                <div class="d-flex align-items-center mt-3 mt-xl-0 ms-xl-3">
                     <div class="theme-controls d-flex">
                         <button id="theme-toggle" class="control-btn"><i class="bi bi-sun"></i></button>
                         <button id="rtl-toggle" class="control-btn"><span class="rtl-text">LTR</span></button>
                     </div>
+                    <a href="flavors.html" class="btn btn-accent rounded-pill px-3 py-2 fw-bold text-nowrap ms-2">Shop
+                        Our Flavours</a>
                 </div>
             </div>
         </div>
@@ -75,7 +77,8 @@
                 <p class="hero-pretitle">Soda Maker's Journal</p>
                 <h1>Stories of pure cane &amp; <span class="text-accent">retro bubbles</span></h1>
                 <p class="lead">
-                    We share the recipes, botanical discoveries, and fountain history behind our small-batch sodas—from heritage fruit orchards to the copper kettle.
+                    We share the recipes, botanical discoveries, and fountain history behind our small-batch sodas—from
+                    heritage fruit orchards to the copper kettle.
                 </p>
                 <div class="blog-hero-actions">
                     <a href="#blog-articles" class="btn btn-accent btn-lg text-dark fw-bold">Read the Journal</a>
@@ -98,9 +101,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0 animate-on-scroll text-center">
                         <span class="premium-tag mb-3 d-inline-block">Editorial Pick</span>
-                        <h2 class="display-4 fw-bold mb-4">The Art &amp; Alchemy of <span
-                                class="text-accent">Kettle Simmering</span></h2>
-                        <p class="lead opacity-75 mb-4">Beyond simple carbonated water lies the culinary depth of real botanical extraction. Discover how simmering African kola nuts, Tahitian vanilla, and wild ginger unlock rich flavor notes that artificial mass-market sodas could never achieve.</p>
+                        <h2 class="display-4 fw-bold mb-4">The Art &amp; Alchemy of <span class="text-accent">Kettle
+                                Simmering</span></h2>
+                        <p class="lead opacity-75 mb-4">Beyond simple carbonated water lies the culinary depth of real
+                            botanical extraction. Discover how simmering African kola nuts, Tahitian vanilla, and wild
+                            ginger unlock rich flavor notes that artificial mass-market sodas could never achieve.</p>
                         <div class="d-flex justify-content-center gap-3 mt-4">
                             <a href="#blog-articles" class="btn btn-accent px-5 text-dark fw-bold">Continue Reading</a>
                             <button class="btn btn-outline-light rounded-circle border-secondary"><i
@@ -109,7 +114,8 @@
                     </div>
                     <div class="col-lg-6 text-center animate-on-scroll" style="animation-delay: 0.2s">
                         <div class="peek-image-container">
-                            <img src="assets/images/premium-editorial.png" alt="Artisanal Simmering"
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpSrCo3bD8wjM2oYBu5e6I-Fg5KwoMTWA4QOT39v4JyQ&s=10"
+                                alt="Artisanal Simmering"
                                 class="img-fluid rounded-4 shadow-lg border border-secondary p-1 bg-dark">
                             <div class="peek-glow"></div>
                         </div>
@@ -120,74 +126,105 @@
     </section>
 
     <!-- Blog Container -->
-    <section class="section-padding" id="blog-articles">
+    <!-- Blog Container -->
+    <section class="section-padding py-5" id="blog-articles">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-4 g-lg-5">
                 <div class="col-12 d-lg-none animate-on-scroll">
-                    <div class="bg-secondary p-4 rounded-4 border border-secondary mb-5 shadow-sm blog-category-card">
-                        <h4 class="mb-4">Categories</h4>
-                        <ul class="list-unstyled blog-category-list">
-                            <li class="mb-3 text-accent fw-bold p-2 bg-dark rounded d-flex justify-content-between">
-                                <span>Soda Lore</span> <span>12</span>
+                    <div
+                        class="bg-secondary p-3 p-md-4 rounded-4 border border-secondary mb-4 shadow-sm blog-category-card">
+                        <h4 class="mb-3">Categories</h4>
+                        <ul class="list-unstyled blog-category-list mb-0">
+                            <li class="mb-2">
+                                <a href="#blog-articles"
+                                    class="blog-category-btn active d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                    <span>All Stories</span> <span
+                                        class="badge bg-accent text-dark rounded-pill">40</span>
+                                </a>
                             </li>
-                            <li
-                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
-                                <span>Brewing Craft</span>
-                                <span>8</span>
+                            <li class="mb-2">
+                                <a href="#blog-articles"
+                                    class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                    <span>Soda Lore</span> <span
+                                        class="badge bg-dark border border-secondary text-white-50 rounded-pill">12</span>
+                                </a>
                             </li>
-                            <li
-                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
-                                <span>Fountain Events</span>
-                                <span>5</span>
+                            <li class="mb-2">
+                                <a href="#blog-articles"
+                                    class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                    <span>Brewing Craft</span> <span
+                                        class="badge bg-dark border border-secondary text-white-50 rounded-pill">8</span>
+                                </a>
                             </li>
-                            <li
-                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
-                                <span>Brewhouse Life</span>
-                                <span>15</span>
+                            <li class="mb-2">
+                                <a href="#blog-articles"
+                                    class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                    <span>Fountain Events</span> <span
+                                        class="badge bg-dark border border-secondary text-white-50 rounded-pill">5</span>
+                                </a>
+                            </li>
+                            <li class="mb-0">
+                                <a href="#blog-articles"
+                                    class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                    <span>Brewhouse Life</span> <span
+                                        class="badge bg-dark border border-secondary text-white-50 rounded-pill">15</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- Blog Preview Main -->
                 <div class="col-lg-8 animate-on-scroll">
-                    <article class="mb-5 rounded-4 overflow-hidden border border-secondary shadow-sm">
-                        <img src="assets/images/ritual_card.png" alt="Pure Cane Sugar Soda"
-                            class="img-fluid w-100 d-block shadow-lg" style="max-height: 600px; object-fit: cover;">
-                        <div class="p-5 text-center d-flex flex-column align-items-center">
+                    <article class="mb-4 rounded-4 overflow-hidden border border-secondary shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrd-R6tRnNRT6kJ1ziy04KzMn6m1xuTJ8ovukRERJ4ew&s=10"
+                            alt="Pure Cane Sugar & Botanical Harvest" class="img-fluid w-100 d-block shadow-lg"
+                            style="max-height: 480px; object-fit: cover;">
+                        <div class="p-4 p-md-5 text-center d-flex flex-column align-items-center">
                             <span class="text-accent fw-bold text-uppercase small mb-2">Heritage Ingredients</span>
-                            <h2 class="display-4 fw-bold mb-4"><a href="#blog-articles">Why 100% Pure Cane Sugar Makes All the Difference</a></h2>
-                            <p class="opacity-75 fs-5 max-width-600 mb-4">Industrial soda makers turned away from authentic cane sugar decades ago in favor of high-fructose corn syrup. Here is why small-batch cane brewing restores the authentic mouthfeel, crisp finish, and honest sweetness of true heritage sodas.</p>
-                            <a href="#blog-articles" class="btn btn-accent px-5 continue-reading-btn text-dark fw-bold">Read Full Story</a>
+                            <h2 class="display-5 fw-bold mb-3"><a href="#blog-articles">Why 100% Pure Cane Sugar Makes
+                                    All the Difference</a></h2>
+                            <p class="opacity-75 fs-5 max-width-600 mb-4">Industrial soda makers turned away from
+                                authentic cane sugar decades ago in favor of high-fructose corn syrup. Here is why
+                                small-batch cane brewing restores the authentic mouthfeel, crisp finish, and honest
+                                sweetness of true heritage sodas.</p>
+                            <a href="#blog-articles"
+                                class="btn btn-accent px-5 continue-reading-btn text-dark fw-bold">Read Full Story</a>
                         </div>
                     </article>
 
-                    <hr class="border-secondary my-5">
+                    <hr class="border-secondary my-4">
 
                     <!-- Blog Preview 2 -->
-                    <div class="row g-4 mb-5">
+                    <div class="row g-4 mb-4">
                         <div class="col-md-5">
                             <img src="assets/images/event_tasting.png" alt="Classic Soda Float"
-                                class="img-fluid rounded-4 h-100 object-fit-cover shadow">
+                                class="img-fluid rounded-4 h-100 object-fit-cover shadow" style="min-height: 180px;">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 d-flex flex-column justify-content-center">
                             <span class="text-accent fw-bold text-uppercase small">Soda Fountain Culture</span>
-                            <h3 class="mt-2"><a href="#blog-articles">The Art of the Craft Soda Float: Classic Vanilla Bean &amp; Black Cherry</a></h3>
-                            <p class="opacity-75">Discover why pairing hand-churned Madagascar vanilla bean gelato with rich, slow-simmered black cherry soda creates the ultimate nostalgic dessert ritual.</p>
+                            <h3 class="mt-2 h4"><a href="#blog-articles">The Art of the Craft Soda Float: Classic
+                                    Vanilla Bean &amp; Black Cherry</a></h3>
+                            <p class="opacity-75 mb-3">Discover why pairing hand-churned Madagascar vanilla bean gelato
+                                with rich, slow-simmered black cherry soda creates the ultimate nostalgic dessert
+                                ritual.</p>
                             <a href="#blog-articles" class="text-accent fw-bold blog-card-link">Read Recipe <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
 
                     <!-- Blog Preview 3 -->
-                    <div class="row g-4 mb-5">
+                    <div class="row g-4 mb-2">
                         <div class="col-md-5">
                             <img src="assets/images/event_bento_eco.png" alt="Zero-Waste Brewhouse"
-                                class="img-fluid rounded-4 h-100 object-fit-cover shadow">
+                                class="img-fluid rounded-4 h-100 object-fit-cover shadow" style="min-height: 180px;">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 d-flex flex-column justify-content-center">
                             <span class="text-accent fw-bold text-uppercase small">Sustainability &amp; Sourcing</span>
-                            <h3 class="mt-2"><a href="#blog-articles">From Whole Citrus Rinds to Compost: Our Circular Brewhouse Practice</a></h3>
-                            <p class="opacity-75">Learn how we cold-press fresh blood orange and lime peels for natural aromatic oils, then compost spent botanical pulp directly with local urban community farms.</p>
+                            <h3 class="mt-2 h4"><a href="#blog-articles">From Whole Citrus Rinds to Compost: Our
+                                    Circular Brewhouse Practice</a></h3>
+                            <p class="opacity-75 mb-3">Learn how we cold-press fresh blood orange and lime peels for
+                                natural aromatic oils, then compost spent botanical pulp directly with local urban
+                                community farms.</p>
                             <a href="#blog-articles" class="text-accent fw-bold blog-card-link">Read More <i
                                     class="bi bi-arrow-right"></i></a>
                         </div>
@@ -196,48 +233,97 @@
 
                 <!-- Sidebar -->
                 <div class="col-lg-4 animate-on-scroll" style="animation-delay: 0.3s">
-                    <div class="bg-secondary p-4 rounded-4 border border-secondary mb-5 shadow-sm blog-category-card d-none d-lg-block">
-                        <h4 class="mb-4">Categories</h4>
-                        <ul class="list-unstyled blog-category-list">
-                            <li class="mb-3 text-accent fw-bold p-2 bg-dark rounded d-flex justify-content-between">
-                                <span>Soda Lore</span> <span>12</span>
-                            </li>
-                            <li
-                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
-                                <span>Brewing Craft</span>
-                                <span>8</span>
-                            </li>
-                            <li
-                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
-                                <span>Fountain Events</span>
-                                <span>5</span>
-                            </li>
-                            <li
-                                class="mb-3 p-2 d-flex justify-content-between opacity-75 border-bottom border-secondary">
-                                <span>Brewhouse Life</span>
-                                <span>15</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="blog-sidebar-sticky">
+                        <div
+                            class="bg-secondary p-3 p-md-4 rounded-4 border border-secondary mb-4 shadow-sm blog-category-card d-none d-lg-block">
+                            <h4 class="mb-3">Categories</h4>
+                            <ul class="list-unstyled blog-category-list mb-0">
+                                <li class="mb-2">
+                                    <a href="#blog-articles"
+                                        class="blog-category-btn active d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                        <span>All Stories</span> <span
+                                            class="badge bg-accent text-dark rounded-pill">40</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#blog-articles"
+                                        class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                        <span>Soda Lore</span> <span
+                                            class="badge bg-dark border border-secondary text-white-50 rounded-pill">12</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#blog-articles"
+                                        class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                        <span>Brewing Craft</span> <span
+                                            class="badge bg-dark border border-secondary text-white-50 rounded-pill">8</span>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#blog-articles"
+                                        class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                        <span>Fountain Events</span> <span
+                                            class="badge bg-dark border border-secondary text-white-50 rounded-pill">5</span>
+                                    </a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="#blog-articles"
+                                        class="blog-category-btn d-flex justify-content-between align-items-center p-2 px-3 rounded-3 text-decoration-none">
+                                        <span>Brewhouse Life</span> <span
+                                            class="badge bg-dark border border-secondary text-white-50 rounded-pill">15</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="newsletter-sidebar p-4 rounded-4 mb-5">
-                        <h4 class="mb-3">Get the Soda Gazette</h4>
-                        <p class="small mb-4">Join our community for small-batch release notifications and exclusive soda fountain recipes delivered every Friday.</p>
-                        <form>
-                            <input type="email" class="form-control mb-3 border-0 bg-white"
-                                placeholder="your@email.com">
-                            <button class="btn btn-accent w-100 text-dark fw-bold">Subscribe</button>
-                        </form>
-                    </div>
+                        <div class="bg-secondary p-3 p-md-4 rounded-4 border border-secondary mb-4 shadow-sm">
+                            <h4 class="mb-3">Popular Notes</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <a href="#blog-articles" class="text-decoration-none d-flex align-items-center gap-3">
+                                    <img src="assets/images/flavor_cola_vintage.svg" alt="Craft Cola"
+                                        class="rounded-3 bg-dark p-2 border border-secondary"
+                                        style="width: 48px; height: 48px; object-fit: contain;">
+                                    <div>
+                                        <h6 class="mb-1 text-white opacity-90" style="font-size: 0.9rem;">The Kola Nut
+                                            Extraction Method</h6>
+                                        <small class="text-accent">4 min read</small>
+                                    </div>
+                                </a>
+                                <a href="#blog-articles" class="text-decoration-none d-flex align-items-center gap-3">
+                                    <img src="assets/images/flavor_wild_cherry.svg" alt="Wild Cherry"
+                                        class="rounded-3 bg-dark p-2 border border-secondary"
+                                        style="width: 48px; height: 48px; object-fit: contain;">
+                                    <div>
+                                        <h6 class="mb-1 text-white opacity-90" style="font-size: 0.9rem;">Elderberry
+                                            Tartness Balance</h6>
+                                        <small class="text-accent">3 min read</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-                    <div class="text-center text-lg-start">
-                        <h4 class="mb-4">Follow Us</h4>
-                        <div class="d-flex justify-content-center justify-content-lg-start gap-3">
-                            <a href="#" class="btn btn-outline-accent rounded-circle"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="#" class="btn btn-outline-accent rounded-circle"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="btn btn-outline-accent rounded-circle"><i
-                                    class="bi bi-twitter-x"></i></a>
+                        <div class="newsletter-sidebar p-4 rounded-4 mb-4">
+                            <h4 class="mb-3">Get the Soda Gazette</h4>
+                            <p class="small mb-3">Join our community for small-batch release notifications and exclusive
+                                soda fountain recipes delivered every Friday.</p>
+                            <form>
+                                <input type="email" class="form-control mb-3 border-0 bg-white"
+                                    placeholder="your@email.com">
+                                <button class="btn btn-accent w-100 text-dark fw-bold">Subscribe</button>
+                            </form>
+                        </div>
+
+                        <div
+                            class="p-3 p-md-4 rounded-4 border border-secondary bg-secondary text-center text-lg-start">
+                            <h4 class="mb-3">Follow Us</h4>
+                            <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                                <a href="#" class="btn btn-outline-accent rounded-circle"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-accent rounded-circle"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="#" class="btn btn-outline-accent rounded-circle"><i
+                                        class="bi bi-twitter-x"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -254,13 +340,16 @@
                     <h2 class="display-3 fw-bold mb-4">Our <span class="text-accent">Harvest</span> Rhythm</h2>
                 </div>
                 <div class="col-lg-6 animate-on-scroll" style="animation-delay: 0.2s">
-                    <p class="lead opacity-75">Each season, we harvest freshly picked botanicals and whole orchard fruits from family farms. Our limited small-batch sodas honor nature's seasonal calendar. Discover the taste of fresh harvest in every bottle.</p>
+                    <p class="lead opacity-75">Each season, we harvest freshly picked botanicals and whole orchard
+                        fruits from family farms. Our limited small-batch sodas honor nature's seasonal calendar.
+                        Discover the taste of fresh harvest in every bottle.</p>
                 </div>
             </div>
 
             <div class="harvest-grid">
                 <div class="harvest-item large animate-on-scroll">
-                    <img src="assets/images/event_bento_harvest.png" alt="Orchard Ingredients" class="harvest-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDNbN-V3YviR_dq7wyjV8K2Wq59SAVd9iiKI6d6SSGg&s=10"
+                        alt="Orchard Ingredients" class="harvest-img">
                     <div class="harvest-overlay">
                         <h4 class="mb-2">Spring Citrus &amp; Herb</h4>
                         <p class="small opacity-75">Moro Blood Orange &amp; Fresh Mint Infusion</p>
@@ -274,7 +363,8 @@
                                     class="bi bi-calendar-check fs-4 text-white"></i></div>
                             <h5 class="mb-0">Next Reserve Batch</h5>
                         </div>
-                        <p class="small opacity-75">Wild Michigan Blueberry &amp; Lemon Verbena landing next month in limited 4-packs.</p>
+                        <p class="small opacity-75">Wild Michigan Blueberry &amp; Lemon Verbena landing next month in
+                            limited 4-packs.</p>
                         <a href="flavors.html" class="text-accent small fw-bold harvest-note-link">Explore Flavors <i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
@@ -296,10 +386,11 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <a class="navbar-brand d-inline-flex align-items-center mb-4" href="index.html">
-                        <img src="assets/images/logo.png" alt="Craft Soda Logo" class="brand-logo">
+                        <img src="assets/images/logo.svg" alt="Craft Soda Logo" class="brand-logo">
                         <span>Craft Soda</span>
                     </a>
-                    <p class="opacity-75 mb-4">Handcrafted small-batch sodas simmered in copper kettles with 100% pure cane sugar, fresh botanical infusions, and fine micro-bubbles.</p>
+                    <p class="opacity-75 mb-4">Handcrafted small-batch sodas simmered in copper kettles with 100% pure
+                        cane sugar, fresh botanical infusions, and fine micro-bubbles.</p>
                     <div class="social-links d-flex gap-3">
                         <a href="#"><i class="bi bi-instagram fs-4"></i></a>
                         <a href="#"><i class="bi bi-facebook fs-4"></i></a>
@@ -320,14 +411,15 @@
                 <div class="col-lg-3">
                     <h5>Soda Taproom Hours</h5>
                     <ul class="list-unstyled mt-3 opacity-75">
-                        <li class="mb-2">Mon - Thu: 11:00 AM - 9:00 PM</li>
-                        <li class="mb-2">Fri - Sat: 10:00 AM - 11:00 PM</li>
-                        <li class="mb-2">Sunday: 11:00 AM - 8:00 PM</li>
+                        <li class="mb-2"><i class="bi bi-clock text-accent me-2"></i>Mon - Thu: 11:00 AM - 9:00 PM</li>
+                        <li class="mb-2"><i class="bi bi-clock text-accent me-2"></i>Fri - Sat: 10:00 AM - 11:00 PM</li>
+                        <li class="mb-2"><i class="bi bi-clock text-accent me-2"></i>Sunday: 11:00 AM - 8:00 PM</li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <h5>Newsletter</h5>
-                    <p class="opacity-75 mt-3">Get first access to limited-edition small-batch releases and secret taproom floats.</p>
+                    <p class="opacity-75 mt-3">Get first access to limited-edition small-batch releases and secret
+                        taproom floats.</p>
                     <form class="mt-3">
                         <div class="input-group">
                             <input type="email" class="form-control bg-dark border-secondary text-white"
