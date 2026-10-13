@@ -258,6 +258,28 @@ Skewed One Page Scroll Hero
     color: #f8fbff !important;
 }
 
+/* Blog Sidebar Follow Us Social Buttons */
+.blog-sidebar-sticky .btn-outline-accent.rounded-circle,
+.blog-social-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.blog-sidebar-sticky .btn-outline-accent.rounded-circle:hover,
+.blog-social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 100, 51, 0.3);
+}
+
 /* Blog Hero */
 .blog-hero {
     position: relative;

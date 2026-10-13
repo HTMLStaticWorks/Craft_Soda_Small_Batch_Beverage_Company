@@ -401,6 +401,32 @@
     border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
+@media (max-width: 991.98px) {
+    .contact-card-wrapper ul {
+        display: inline-flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: fit-content !important;
+        max-width: 100% !important;
+        margin-inline: auto !important;
+        text-align: start !important;
+        padding-inline: 0 !important;
+    }
+
+    .contact-card-wrapper ul li {
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: start !important;
+        width: 100% !important;
+    }
+
+    .contact-card-wrapper ul li i {
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+    }
+}
+
 .contact-info-highlight {
     background-color: rgba(255, 255, 255, 0.05);
 }

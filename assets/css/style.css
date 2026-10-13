@@ -81,7 +81,13 @@ a {
    Standard Global Typography System (Uniform across all pages)
    ============================================================ */
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1.fw-bold, h2.fw-bold, h3.fw-bold, h4.fw-bold, h5.fw-bold, h6.fw-bold,
+h1.fw-bolder, h2.fw-bolder, h3.fw-bolder, h4.fw-bolder, h5.fw-bolder, h6.fw-bolder,
+h1.fw-semibold, h2.fw-semibold, h3.fw-semibold, h4.fw-semibold, h5.fw-semibold, h6.fw-semibold,
+[class*="display-"],
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6,
+.display-1.fw-bold, .display-2.fw-bold, .display-3.fw-bold, .display-4.fw-bold, .display-5.fw-bold, .display-6.fw-bold {
     font-family: 'Outfit', sans-serif !important;
     font-weight: 600 !important;
 }
@@ -150,8 +156,19 @@ p, body {
     font-weight: 450;
 }
 
-p {
+p, .p {
     font-weight: 450 !important;
+}
+
+p.fw-bold,
+p.fw-bolder,
+p.fw-semibold,
+p .fw-bold,
+p .fw-bolder,
+p .fw-semibold,
+p strong,
+p b {
+    font-weight: 550 !important;
 }
 
 small, .small {
@@ -284,6 +301,19 @@ small, .small {
     align-items: center;
     gap: 0.4rem;
     flex-shrink: 0;
+}
+
+/* Mobile and Tablet View: Center align theme/RTL controls and Shop Our Flavours button */
+@media (max-width: 1199.98px) {
+    .navbar .navbar-collapse > .d-flex,
+    .navbar-collapse .d-flex.align-items-center:not(.theme-controls) {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-inline: auto !important;
+        text-align: center !important;
+    }
 }
 
 /* Center Navbar Dropdowns on Desktop */
@@ -1733,6 +1763,28 @@ footer .btn-accent {
     z-index: 5;
 }
 
+/* Blog Sidebar Follow Us Social Buttons */
+.blog-sidebar-sticky .btn-outline-accent.rounded-circle,
+.blog-social-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.blog-sidebar-sticky .btn-outline-accent.rounded-circle:hover,
+.blog-social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 100, 51, 0.3);
+}
+
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -2410,7 +2462,7 @@ body {
 .slide-title {
     font-family: 'Outfit', sans-serif;
     font-size: clamp(3rem, 8vw, 5.5rem);
-    font-weight: 800;
+    font-weight: 600;
     line-height: 6rem;
     margin: 0;
     color: var(--text-color);
@@ -2548,7 +2600,7 @@ body {
     font-size: 0.9rem;
     opacity: 0.6;
     margin-top: 10px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* Overlay Navigation */
@@ -2657,7 +2709,7 @@ body {
 
 .overlay-preview-title-text {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text-color);
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     font-family: 'Outfit', sans-serif;
@@ -2787,7 +2839,7 @@ body {
 
 .conscious-card h3 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1.5rem;
     font-family: 'Outfit', sans-serif;
 }
@@ -3058,7 +3110,7 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.1;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 2rem;
     background: linear-gradient(135deg, var(--text-color) 40%, var(--accent-color) 100%);
     -webkit-background-clip: text;
@@ -3288,7 +3340,7 @@ body {
 .bento-content h3 {
     color: #ffffff;
     font-family: 'Outfit', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 0;
 }
 
@@ -3365,7 +3417,7 @@ body {
 
 .flavors-intro-title {
     font-size: clamp(3rem, 6vw, 4.5rem);
-    font-weight: 800;
+    font-weight: 600;
     font-family: 'Outfit', sans-serif;
     margin-bottom: 2rem;
     background: linear-gradient(135deg, var(--text-color) 40%, var(--accent-color) 100%);
@@ -3437,7 +3489,7 @@ body {
 .premium-flavor-card h3 {
     font-family: 'Outfit', sans-serif;
     font-size: 2.25rem;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, var(--text-color), var(--accent-color));
     -webkit-background-clip: text;
@@ -3550,7 +3602,7 @@ body {
 
 .anatomy-point h4 {
     font-family: 'Outfit', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 0.75rem;
     color: var(--accent-color);
@@ -3602,7 +3654,7 @@ body {
 
 .events-intro-heading {
     font-size: clamp(3rem, 6vw, 4.5rem);
-    font-weight: 800;
+    font-weight: 600;
     font-family: 'Outfit', sans-serif;
     margin-bottom: 2rem;
     background: linear-gradient(135deg, var(--text-color), var(--accent-color));
@@ -3691,7 +3743,7 @@ body {
 .premium-event-card h3 {
     font-family: 'Outfit', sans-serif;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
@@ -3800,7 +3852,7 @@ body {
 
 .lounge-feature-node h4 {
     font-family: 'Outfit', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
@@ -4042,7 +4094,7 @@ body {
 
 .pricing-card h4 {
     font-family: 'Outfit', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
@@ -4066,6 +4118,29 @@ body {
     align-items: center;
     gap: 0.75rem;
     opacity: 0.9;
+}
+
+/* Tablet View: Center align features list in Wholesale pricing cards with properly aligned tick logos */
+@media (max-width: 1199.98px) {
+    .pricing-card .features-list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: center;
+        width: fit-content;
+        max-width: 100%;
+        margin-inline: auto;
+        text-align: start;
+        padding-inline: 0;
+    }
+
+    .pricing-card .features-list li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+        width: 100%;
+    }
 }
 
 [data-theme="light"] .pricing-card {
@@ -4181,7 +4256,7 @@ body {
 }
 
 .wholesale-content h2 {
-    font-weight: 800;
+    font-weight: 600;
     font-family: 'Outfit', sans-serif;
     line-height: 1.1;
     margin-bottom: 2rem;
@@ -4209,7 +4284,7 @@ body {
     .wholesale-banner {
         grid-template-columns: 1fr;
         padding: 5rem 3rem;
-        gap: 5rem;
+        gap: 4rem;
         text-align: center;
         max-width: 95%;
     }
@@ -4219,8 +4294,88 @@ body {
         order: -1;
     }
 
+    .wholesale-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .wholesale-content ul {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        margin-inline: auto;
+        padding-inline: 0;
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .wholesale-content ul li {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        width: 100%;
+    }
+
+    .wholesale-content ul li i {
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+        line-height: 1;
+    }
+
+    .wholesale-content .btn-accent {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+    }
+
     .perk-circle-grid {
         gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wholesale-banner {
+        padding: 3.5rem 1.75rem;
+        gap: 3rem;
+        border-radius: 35px;
+        max-width: 100%;
+    }
+
+    .wholesale-img-container {
+        height: 300px;
+        border-radius: 25px;
+    }
+
+    .wholesale-badge {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .wholesale-content h2 {
+        font-size: clamp(1.8rem, 6vw, 2.4rem);
+        margin-bottom: 1.25rem;
+    }
+
+    .wholesale-content p {
+        font-size: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .wholesale-content ul {
+        margin-bottom: 2rem !important;
+    }
+
+    .wholesale-content .btn-accent {
+        width: 100%;
+        max-width: 320px;
+        padding: 0.95rem 1.5rem;
     }
 }
 
@@ -4660,7 +4815,7 @@ body {
 .flavors-slider .box .details h1 {
     font-family: 'Outfit', sans-serif;
     font-size: 3.8rem;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 1rem;
     color: #fff;
 }
@@ -4967,7 +5122,7 @@ body {
     width: 100%;
     font-family: 'Outfit', sans-serif;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
     color: #fff;
     text-align: center;
     line-height: 1.1;
