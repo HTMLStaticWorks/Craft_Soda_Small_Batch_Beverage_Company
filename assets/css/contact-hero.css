@@ -4,9 +4,13 @@
     padding: 130px 0 90px;
     background-color: var(--primary-bg, #0b0f14);
     overflow: hidden;
-    min-height: 85vh;
+    min-height: max(85vh, 800px);
     display: flex;
     align-items: center;
+}
+
+.contact-hero .min-vh-75 {
+    min-height: 0;
 }
 
 .contact-hero::after {

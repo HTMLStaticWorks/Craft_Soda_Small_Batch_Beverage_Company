@@ -775,7 +775,7 @@ footer .btn-accent {
 /* Flavors Hero */
 .flavors-hero {
     position: relative;
-    min-height: 85vh;
+    min-height: max(85vh, 800px);
     padding: 130px 0 90px;
     display: flex;
     align-items: center;

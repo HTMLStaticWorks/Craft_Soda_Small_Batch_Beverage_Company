@@ -5,7 +5,7 @@
     position: relative;
     padding-top: 130px;
     padding-bottom: 90px;
-    min-height: 85vh;
+    min-height: max(85vh, 800px);
     background: radial-gradient(circle at 80% 35%, rgba(255, 100, 51, 0.14) 0%, transparent 60%),
                 radial-gradient(circle at 20% 75%, rgba(252, 163, 17, 0.08) 0%, transparent 50%),
                 var(--dark-bg, #16100d);
